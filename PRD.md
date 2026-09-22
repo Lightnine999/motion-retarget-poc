@@ -85,3 +85,7 @@ Kling, 힉스필드, Seedance 2.0 같은 상용 AI 영상 생성 서비스가 �
 
 - Colab 세션 시간 제한 내에 GVHMR 추론이 안정적으로 끝나는지는 실제로 돌려봐야 안다.
 - Higgsfield는 공개 API가 없고 Python SDK(`higgsfield-client`)/CLI 기반이라, 다른 두 서비스와 연동 난이도가 다를 수 있다.
+
+## 10. 결정된 사항 (Resolved Decisions)
+
+- **핵심 기술 1의 포즈 추정 방식**: GVHMR + Colab GPU로 확정. MediaPipe Pose Landmarker(완전 로컬)는 깊이 추정 노이즈와 회전값 미제공 문제로 기각, 로컬 GPU(Windows+엔비디아)는 하드웨어 의존적이고 Colab보다 셋업이 복잡해 팀 기본값에서 제외. 근거는 [TECH_SPEC.md §2.4.1](TECH_SPEC.md#241-결정-기록--gvhmrcolab-vs-mediapipe-pose-vs-로컬-gpu) 참고.

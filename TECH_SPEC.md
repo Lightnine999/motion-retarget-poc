@@ -155,7 +155,12 @@ GPU 런타임으로 전환 후(전환 시 VM이 초기화되어 클론부터 재
 |---|---|---|
 | Python 3.10 환경 구성 | ✅ 자동화 가능 | `condacolab` 패키지로 conda(miniforge) 설치 → `conda create -n gvhmr python=3.10` 순서를 노트북 셀로 그대로 자동화 가능. `condacolab.install()` 실행 시 커널이 1회 자동 재시작되는 점만 노트북 안내문에 명시하면 됨. |
 | `chumpy` 설치 실패 | ⚠️ 알려진 함정, 우회 방법 확인 | 기본 `pip install`(build isolation 켜짐)은 chumpy 빌드용 임시 환경에 최신 numpy가 깔려 `numpy.distutils`가 없어서 실패. **`numpy==1.23.5`를 먼저 설치한 뒤 `pip install --no-build-isolation`으로 chumpy만 따로 설치**하면 해결됨(직접 재현·해결 확인). `requirements.txt` 전체 설치 스크립트에 이 순서를 반영해야 한다. |
-| 나머지 의존성(torch 등) 설치 | 🔄 확인 중 | 용량이 커서 설치에 몇 분 소요 — 이 문서 갱신 시점 기준 진행 중, 결과 확인되는 대로 본 표에 추가 예정. |
+| 나머지 의존성(torch 등) 설치 | ✅ 완료 확인 | `torch 2.3.0+cu121`, `cuda available: True`, `torchvision 0.18.0+cu121`, `pytorch3d 0.7.6`, `smplx`/`chumpy`/`ultralytics`까지 전부 import 성공. `pip install -e .`로 `hmr4d` 패키지도 정상 설치. |
+| 비-바디모델 체크포인트(gvhmr/hmr2/vitpose/dpvo/yolo) 다운로드 | ⚠️ 원래 경로(Google Drive)는 실패, 대체 경로로 해결 | 공식 문서의 Drive 링크가 **공유 쿼터 초과**로 실제 막혀 있음(`gdown`으로 재현: "Cannot retrieve the public link" / "Too many users have viewed or downloaded this file recently"). 대신 커뮤니티 HuggingFace 미러(`camenduru/GVHMR`)에서 동일 체크포인트를 5.1GB, 약 40초 만에 전부 받음. `yolov8x.pt`는 애초에 GVHMR 전용이 아니라 Ultralytics 공식 배포본이라 `YOLO('yolov8x.pt')` 한 줄로 자체 다운로드됨 — Drive를 거칠 필요 자체가 없었음. |
+| SMPL/SMPLX 회원가입 → 파일 확보 | ❌ 여전히 자동화 불가 (최초 1회 한정) | 실제 다운로드 페이지 확인 결과, 필요한 건 각 사이트의 "**SMPL/SMPL-X 파이썬 코드베이스용**" 메인 패키지 하나뿐 — UV맵·VPoser·Homogenus·Blender 애드온·Unity 패키지 등 나머지 항목은 불필요. `gender="neutral"`이 기본값이라 `SMPL_NEUTRAL.pkl` + `SMPLX_NEUTRAL.npz` **2개 파일**만 있으면 된다(성별별 6개 전부 불필요). |
+| 전체 파이프라인 실행 | ✅ [colab/gvhmr_inference.ipynb](../colab/gvhmr_inference.ipynb)로 정리 완료 | 위 모든 셀을 하나의 노트북으로 정리. **사람이 개입하는 지점은 "GPU 런타임 선택"과 "SMPL/SMPLX 업로드" 딱 2곳(둘 다 사용자당 최초 1회)** 뿐이고, 그 사이는 전부 `런타임 > 모두 실행`으로 자동 진행된다. |
+
+**재사용성에 대한 결론**: "자동화 안 되는 POC는 쓸모없다"는 우려는 타당하지만, 실제로 남는 수동 작업은 **사용자당 최초 1회, 총 2곳**(GPU 런타임 클릭 1번 + SMPL/SMPLX 계정가입·업로드 1번)뿐이다. SMPL/SMPLX 회원가입은 GVHMR뿐 아니라 SMPL 기반 인체 모델을 쓰는 어떤 도구도 피할 수 없는 라이선스 구조라, 이걸 없애려면 애초에 GVHMR(SMPL 기반)을 포기하고 MediaPipe로 돌아가야 하는데 — 그건 이미 리타겟팅 품질 문제로 기각한 선택지다([§2.4.1](#241-결정-기록--gvhmrcolab-vs-mediapipe-pose-vs-로컬-gpu) 참고). 한 번 계정을 만들고 파일을 받아두면(본인 Drive 등에 보관), 이후 영상을 몇 개를 돌리든 매번 새로 할 필요는 없다.
 
 ## 4. 한계 및 향후 확장
 

@@ -121,6 +121,20 @@ motion-retarget-poc/
 - 각 서비스는 유료이므로, 실제 호출 전에 요금을 확인하고 서비스당 1~2회 호출로 제한한다.
 - Higgsfield는 공개 REST API가 없어 다른 두 서비스와 통합 난이도가 다를 수 있음 — 막히면 웹 UI 수동 실행 후 결과만 저장하는 것으로 대체한다.
 
+### 2.6 GVHMR 셋업 스파이크 결과 (2026-09-22, Colab에서 실측)
+
+`git clone` → `requirements.txt` 설치 → 체크포인트 준비 순서로 실제로 찔러본 결과:
+
+| 항목 | 자동화 가능 여부 | 근거 |
+|---|---|---|
+| 리포 클론 | ✅ 완전 자동화 | `git clone` 그대로 동작 |
+| GVHMR/HMR2/ViTPose/YOLO/DPVO 체크포인트 | ✅ 자동화 가능 | 공개 Google Drive 폴더 — 로그인 리다이렉트 없이 200 응답 확인, `gdown`으로 스크립트 다운로드 가능 |
+| **SMPL·SMPLX 바디 모델** | ❌ **자동화 불가 — 사람이 반드시 개입** | `smpl.is.tue.mpg.de` / `smpl-x.is.tue.mpg.de`에서 **개인 계정으로 라이선스 동의 후** 다운로드해야 함. 각자 이메일 인증이 필요한 구조라 스크립트로 대신 받아줄 수 없다. |
+| **GPU 런타임** | ⚠️ 수동 1회 설정 필요 | Colab 기본 런타임은 GPU 미연결 상태(`nvidia-smi` 없음). "런타임 > 런타임 유형 변경"에서 GPU를 코드가 아니라 **UI에서 직접** 선택해야 함. |
+| **Python 버전 호환성** | ⚠️ 예상보다 손이 많이 감 | 공식 `requirements.txt`가 `pytorch3d`를 **Python 3.10(cp310) 전용 wheel**로 고정(`pytorch3d-0.7.6-cp310-cp310-...whl`). Colab 기본 Python은 3.13.15라 그대로 설치 시 `is not a supported wheel on this platform` 에러로 실패함(직접 재현 확인). `condacolab`로 Python 3.10 conda 환경을 만들어야 공식 설치 경로를 그대로 따를 수 있다. |
+
+**결론**: "원클릭 자동화"는 리포 클론·비-바디모델 체크포인트·Python 3.10 환경 구성까지는 스크립트로 묶을 수 있지만, **SMPL/SMPLX 회원가입 + GPU 런타임 선택 2가지는 각 사용자가 최초 1회 수동으로 해야 하는 구조적 한계**다. README에 "이 2단계는 자동화 대상이 아니다"라고 명시하고, 나머지는 `colab/gvhmr_inference.ipynb`에 셀 순서로 자동화한다.
+
 ## 4. 한계 및 향후 확장
 
 - 이번 POC는 사람 1명, 단순 동작(카메라 컷 없음)만 대상으로 한다.

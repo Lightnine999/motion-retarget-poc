@@ -58,12 +58,17 @@ motion-retarget-poc/
 ├── PRD.md
 ├── TECH_SPEC.md
 ├── README.md
+├── setup.sh                    # 로컬 의존성/Blender 확인 원커맨드 셋업
+├── requirements.txt             # 버전 고정된 파이썬 의존성
+├── .env.example                 # 필요한 API 키 목록 (실제 키는 .env, git 미추적)
 ├── inputs/                  # 원본/트리밍 영상 (git 추적 안 함)
 ├── colab/
-│   └── gvhmr_inference.ipynb   # GVHMR 추론 (Colab 실행용)
+│   └── gvhmr_inference.ipynb   # GVHMR 추론 — Colab에서 "런타임 > 모두 실행"이면 끝
 ├── blender/
-│   ├── retarget_render.py      # bpy 헤드리스 스크립트
-│   └── assets/                 # Mixamo FBX 캐릭터 (git 추적 안 함, 크기 큼)
+│   ├── retarget_render.py      # bpy 헤드리스 스크립트 (단일 커맨드로 실행)
+│   └── assets/                 # Mixamo FBX 캐릭터 (git 추적 안 함, 크기 큼 — download_assets.sh로 받음)
+├── scripts/
+│   └── download_assets.sh      # Mixamo 캐릭터 등 큰 파일 자동 다운로드
 ├── outputs/
 │   └── core1_3d_retarget/      # 최종 MP4 결과
 └── .gitignore
@@ -76,6 +81,20 @@ motion-retarget-poc/
 | 영상 다운로드/트리밍 | 로컬 Mac | 가벼운 I/O 작업 |
 | GVHMR 추론 | Colab GPU | SMPL 체크포인트 + GPU 필요한 무거운 딥러닝 연산 |
 | Blender 리타겟/렌더링 | 로컬 Mac | GPU보다는 CPU/Blender 엔진 의존, 로컬 Blender 앱 활용이 자연스러움 |
+
+### 2.5 자동화 / 재현성 (다른 사람이 쉽게 쓸 수 있게)
+
+"나만 실행 가능한 수동 절차"가 되지 않도록, 각 단계를 아래처럼 스크립트/노트북 단위로 묶는다.
+
+| 절차 | 자동화 방법 |
+|---|---|
+| 로컬 파이썬 의존성 설치 | `requirements.txt` 버전 고정 + `setup.sh` 한 번 실행 (venv 생성 → 설치 → Blender 설치 여부 체크) |
+| GVHMR 추론 (Colab) | 노트북 상단에 "런타임 > 모두 실행"만 누르면 되도록 셀 순서 구성. 단, SMPL 체크포인트는 각자 라이선스 동의가 필요해 **완전 자동화가 불가능한 지점** — 노트북 안에 "여기서부터는 본인 계정으로 직접 받아야 함" 안내를 명확히 남긴다.
+| Mixamo 캐릭터 등 대용량 에셋 | git에 올리지 않고 `scripts/download_assets.sh`로 받게 한다. |
+| Blender 리타겟/렌더링 | `blender --background --python blender/retarget_render.py -- <입력파일>` 한 줄 커맨드로 끝. Blender GUI 조작 없음. |
+| 상용 API 호출 | `.env.example`을 `.env`로 복사해 키만 채우면 바로 실행되는 스크립트. |
+
+> 위 표에서 유일하게 완전 자동화가 안 되는 지점(SMPL 라이선스 동의)은 스파이크에서 실제로 어디까지 자동화되고 어디서부터 사람이 개입해야 하는지 확인한다.
 
 ## 3. 핵심 기술 2 — 상용 AI 영상 서비스 비교
 

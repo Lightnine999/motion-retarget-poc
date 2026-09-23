@@ -162,6 +162,29 @@ GPU 런타임으로 전환 후(전환 시 VM이 초기화되어 클론부터 재
 
 **재사용성에 대한 결론**: "자동화 안 되는 POC는 쓸모없다"는 우려는 타당하지만, 실제로 남는 수동 작업은 **사용자당 최초 1회, 총 2곳**(GPU 런타임 클릭 1번 + SMPL/SMPLX 계정가입·업로드 1번)뿐이다. SMPL/SMPLX 회원가입은 GVHMR뿐 아니라 SMPL 기반 인체 모델을 쓰는 어떤 도구도 피할 수 없는 라이선스 구조라, 이걸 없애려면 애초에 GVHMR(SMPL 기반)을 포기하고 MediaPipe로 돌아가야 하는데 — 그건 이미 리타겟팅 품질 문제로 기각한 선택지다([§2.4.1](#241-결정-기록--gvhmrcolab-vs-mediapipe-pose-vs-로컬-gpu) 참고). 한 번 계정을 만들고 파일을 받아두면(본인 Drive 등에 보관), 이후 영상을 몇 개를 돌리든 매번 새로 할 필요는 없다.
 
+### 2.7 Motius 리타겟팅 함정 — 트위스트 미보정 (2026-09-22)
+
+두 번째 테니스 영상으로 리타겟팅했을 때 "글로벌 회전값과 타겟 캐릭터의 로컬 피봇 기준이 안 맞아 팔다리가 이상한 방향으로 꺾이거나 뒤틀리는" 문제가 발생해, `Motius` 소스(`motius/motion/fbx/_blender.py`, `_fbxsdk.py`)를 직접 읽어 원인을 확인했다.
+
+**원인**: 두 백엔드 모두 각 본의 회전을 `SMPL 글로벌 회전 × 타겟 본의 로컬 레스트 피봇(matrix_local)`으로 계산한다. 이 계산은 타겟 캐릭터의 레스트 포즈가 SMPL의 T포즈와 같다는 전제 위에 있는데, 전제가 깨지면(Mixamo를 기본 포즈=A포즈로 받으면) 어긋남이 그대로 회전값에 섞인다. 팔 체인(어깨~손목, `_REST_POSE_DIRECTION_CHILD`/`_ARM_DIRECTION_CHILD` 딕셔너리에 정의된 6개 본)에 한해서만 `rotation_difference`로 방향(swing, 3자유도 중 2자유도)을 사후 보정하는데, **나머지 1자유도(비틀림/roll)는 애초에 보정 대상이 아니고, 팔 체인 바깥(척추·목·다리·손)은 방향 보정조차 없다.** `backend="fbxsdk"`와 `backend="blender"`는 이 구조가 완전히 동일해서, 백엔드를 바꿔도 결과는 달라지지 않는다(직접 소스 대조 확인).
+
+**대응**:
+1. Mixamo에서 캐릭터를 받을 때 **"T-pose with skin"** 옵션을 선택한다. Motius 자체 문서도 "T포즈가 어깨 보정 오차를 최소화한다"고 명시한다.
+2. 리타겟 결과와 함께 생성되는 `<output>.fbx.json`의 `retarget_diagnostics.arm_chain_direction_error_deg_mean/p95/max`를 매번 확인한다. 최초 검증 케이스(핵심 기술 1 완료 시점)의 팔 방향 오차 평균은 8.8°였다 — 이보다 크게 벌어지면 레스트 포즈 불일치를 의심한다.
+3. T포즈로 받아도 비틀림이 남으면, 이는 Motius의 구조적 한계(비틀림 미보정)이므로 후처리 스크립트로 말단 본(손목·발목 등)의 트위스트를 별도 재계산하는 보정이 추가로 필요하다 — 아직 미구현.
+
+### 2.8 GVHMR은 GPU 없이 실행 불가 — `.cuda()` 하드코딩 (2026-09-23)
+
+Colab GPU 무료 쿼터가 소진돼 CPU 런타임으로 전환해 봤으나 `tools/demo/demo.py`가 추론 시작 37초 만에 크래시했다(`RuntimeError: Found no NVIDIA driver`). 원인을 grep으로 확인한 결과, **DPVO/SLAM 문제가 아니라 훨씬 근본적인 문제**였다.
+
+**원인**: `demo.py:309`에서 `torch.cuda.get_device_name()`을 조건 없이 호출하는 것을 시작으로, 실행 경로에 걸리는 `.cuda()`/`device="cuda"` 하드코딩이 최소 14개 파일에 퍼져 있다 — `tools/demo/demo.py`, `hmr4d/utils/preproc/{vitfeat_extractor,vitpose,slam}.py`, 그리고 핵심 추론 모델인 `hmr4d/model/gvhmr/gvhmr_pl_demo.py`까지 포함된다. `-s`(`--static_cam`) 옵션이 DPVO(SLAM)는 건너뛰어 주지만, 그 외 경로는 GPU가 없으면 아예 실행되지 않도록 짜여 있다. **로컬 Mac(Apple Silicon MPS)도 "NVIDIA GPU가 아니다"라는 점에서 동일하게 막힌다** — CPU/MPS 둘 다 이 하드코딩을 device-agnostic하게 고치지 않는 한 원천 차단.
+
+**판단**: 14개 파일(그중 일부는 모델 forward pass 내부)에 흩어진 하드코딩을 전부 고치는 건 "패치 몇 줄"이 아니라 숨은 CUDA 전용 연산이 더 나올 수 있는 두더지잡기 리스크가 있어, 소요 시간을 예측할 수 없다고 보고 **패치 트랙은 보류**했다(사용자 판단, 2026-09-23).
+
+**대응 — Kaggle 무료 GPU로 전환**: 코드를 고치는 대신 실제 NVIDIA GPU를 무료로 확보하는 쪽을 택했다. Kaggle 노트북은 T4 x2 또는 P100 GPU를 **주 30시간**(Colab 무료 쿼터보다 넉넉하고 리셋 주기가 명확함) 제공하고, 이미지에 `/opt/conda`가 기본 포함돼 있어 `condacolab` 우회 없이 바로 conda 환경을 만들 수 있다. Colab 버전과 완전히 동일한(패치 없는) 파이프라인을 그대로 재사용하도록 [kaggle/gvhmr_inference_kaggle.ipynb](../kaggle/gvhmr_inference_kaggle.ipynb)를 작성했다. 차이점은 셋업 방식뿐: `condacolab` 대신 이미 있는 `/opt/conda` 사용, SMPL/SMPL-X/캐릭터 FBX는 Colab의 Google Drive 마운트 대신 **Kaggle Dataset**(최초 1회 업로드 후 Add Input으로 재사용)으로 공급한다.
+
+로컬 Mac 환경(conda `gvhmr`, Python 3.10, torch 2.3.0 + MPS 인식, `pytorch3d` 0.7.8 소스 빌드 — macOS SDK 비호환 이슈는 `-Wno-invalid-specialization` 컴파일러 플래그로 우회)은 이미 구성해뒀다. GPU 확보 전략이 바뀌거나(예: 로컬에 eGPU/외장 NVIDIA를 붙이는 등) `.cuda()` 패치를 다시 시도할 필요가 생기면 이 환경을 그대로 재사용할 수 있다.
+
 ## 4. 한계 및 향후 확장
 
 - 이번 POC는 사람 1명, 단순 동작(카메라 컷 없음)만 대상으로 한다.

@@ -10,6 +10,22 @@
 
 **핵심 기술 1 파이프라인(영상 → 3D 모션 → Mixamo 캐릭터 리타겟팅) end-to-end 동작 확인, 품질은 부분 해결 상태.** GVHMR(Kaggle GPU) → [Motius](https://github.com/ZeyuLing/Motius)로 SMPL FBX 생성 → Blender + Rokoko 무료 애드온으로 Mixamo 캐릭터에 리타겟팅. 캐릭터 접지·팔다리 방향·목/어깨의 150°+ 짐벌락 스파이크는 근본 원인(FBX가 회전을 오일러로만 저장하는 데서 오는 랩어라운드)을 찾아 해결했지만, 잔여 떨림(19~60°)을 더 줄이려는 후처리는 반복 실패 — 전체 경위는 위 문서 참고.
 
+## 결과 비교 영상
+
+**① GVHMR 3D 모션 추정 (SMPL, 후처리 없음)** — 원본과 나란히 비교, 매우 깔끔하게 동작을 재현함:
+
+<video src="media/gvhmr_smpl_comparison.mp4" controls width="600"></video>
+
+[media/gvhmr_smpl_comparison.mp4](media/gvhmr_smpl_comparison.mp4) (영상이 안 보이면 링크로 직접 열기)
+
+**② 최종 Mixamo 캐릭터 리타겟팅 결과** — 위 SMPL 모션을 Mixamo 캐릭터로 옮긴 최종본(원본과 나란히 비교):
+
+<video src="media/mixamo_final_comparison.mp4" controls width="600"></video>
+
+[media/mixamo_final_comparison.mp4](media/mixamo_final_comparison.mp4) (영상이 안 보이면 링크로 직접 열기)
+
+①은 SMPL 단계까지가 얼마나 깨끗한지, ②는 캐릭터 리타겟팅 후 남은 차이(경위는 [RETARGETING_JITTER_INVESTIGATION.md](RETARGETING_JITTER_INVESTIGATION.md) 참고)를 눈으로 비교하기 위한 자료.
+
 ## 셋업 (최초 1회, 사용자당)
 
 1. Colab에서 [colab/gvhmr_inference.ipynb](colab/gvhmr_inference.ipynb) 열고 `런타임 > 런타임 유형 변경`에서 GPU 선택

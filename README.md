@@ -12,9 +12,17 @@
 
 ## 결과 비교 영상
 
-**① GVHMR 3D 모션 추정 (SMPL, 후처리 없음)** — 원본과 나란히 비교, 매우 깔끔하게 동작을 재현함: [media/gvhmr_smpl_comparison.mp4](media/gvhmr_smpl_comparison.mp4) (클릭하면 GitHub 내장 플레이어로 재생됨)
+**① GVHMR 3D 모션 추정 (SMPL, 후처리 없음)** — 원본과 나란히 비교, 매우 깔끔하게 동작을 재현함:
 
-**② 최종 Mixamo 캐릭터 리타겟팅 결과** — 위 SMPL 모션을 Mixamo 캐릭터로 옮긴 최종본(원본과 나란히 비교): [media/mixamo_final_comparison.mp4](media/mixamo_final_comparison.mp4) (클릭하면 GitHub 내장 플레이어로 재생됨)
+![GVHMR SMPL 비교](media/gvhmr_smpl_comparison.gif)
+
+원본 화질(mp4): [media/gvhmr_smpl_comparison.mp4](media/gvhmr_smpl_comparison.mp4)
+
+**② 최종 Mixamo 캐릭터 리타겟팅 결과** — 위 SMPL 모션을 Mixamo 캐릭터로 옮긴 최종본(원본과 나란히 비교):
+
+![Mixamo 최종 결과 비교](media/mixamo_final_comparison.gif)
+
+원본 화질(mp4): [media/mixamo_final_comparison.mp4](media/mixamo_final_comparison.mp4)
 
 ①은 SMPL 단계까지가 얼마나 깨끗한지, ②는 캐릭터 리타겟팅 후 남은 차이(경위는 [RETARGETING_JITTER_INVESTIGATION.md](RETARGETING_JITTER_INVESTIGATION.md) 참고)를 눈으로 비교하기 위한 자료.
 

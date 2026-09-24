@@ -111,7 +111,7 @@ FBX 바이너리를 직접 열어(`strings`) 확인한 결과, **FBX 포맷은 �
 
 원본 화질(mp4): [media/gvhmr_smpl_comparison.mp4](media/gvhmr_smpl_comparison.mp4)
 
-**② 최종 Mixamo 캐릭터 리타겟팅 결과** — §⑤ 근본 수정까지 적용된 최종본(원본과 나란히 비교):
+**② Mixamo 캐릭터 리타겟팅 중간 결과 (2026-09-23 시점)** — §⑤ 근본 수정까지 적용됐지만 19~60° 잔여 떨림이 아직 남아있던 단계(원본과 나란히 비교, 최종본은 아래 ③):
 
 ![Mixamo 최종 결과 비교](media/mixamo_final_comparison.gif)
 

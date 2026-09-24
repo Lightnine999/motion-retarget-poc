@@ -1,0 +1,130 @@
+{
+  "help_get_rotation_offset": "x.get_rotation_offset_for_retarget_pose_bone(bone_name, source_or_target) -> Quat\nGet a delta rotation for a given bone in the current retarget pose.\n\nArgs:\n    bone_name (Name): The name of the bone to retrieve the rotation offset for\n    source_or_target (RetargetSourceOrTarget): Specifies whether the bone belongs to the source or target skeleton\n\nReturns:\n    Quat: The quaternion representing the rotation offset for the specified bone",
+  "help_get_current_pose_name": "x.get_current_retarget_pose_name(source_or_target) -> Name\nGet the name of the current retarget pose.\n\nArgs:\n    source_or_target (RetargetSourceOrTarget): Specifies whether to retrieve the pose from the source or target skeleton\n\nReturns:\n    Name: The name of the current retarget pose",
+  "current_pose_name_target": "Default Pose",
+  "current_pose_name_source": "Default Pose",
+  "target_pose_rotation_offsets": {
+    "Hips": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "Spine": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "Spine1": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "Spine2": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "Neck": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "Head": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "LeftShoulder": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "RightShoulder": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "LeftArm": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "RightArm": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "source_pose_rotation_offsets": {
+    "Pelvis": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "Spine1": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "Spine2": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "Spine3": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "Neck": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "Head": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "L_Collar": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "R_Collar": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "L_Shoulder": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "R_Shoulder": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  }
+}

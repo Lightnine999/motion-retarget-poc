@@ -1,0 +1,44 @@
+{
+  "written": [
+    {
+      "target_bone": "Hips",
+      "source_bone": "Pelvis",
+      "ok": true
+    },
+    {
+      "target_bone": "Spine",
+      "source_bone": "Spine1",
+      "ok": true
+    },
+    {
+      "target_bone": "Spine1",
+      "source_bone": "Spine2",
+      "ok": true
+    },
+    {
+      "target_bone": "Spine2",
+      "source_bone": "Spine3",
+      "ok": true
+    },
+    {
+      "target_bone": "Neck",
+      "source_bone": "Neck",
+      "ok": true
+    },
+    {
+      "target_bone": "Head",
+      "source_bone": "Head",
+      "ok": true
+    },
+    {
+      "target_bone": "LeftShoulder",
+      "source_bone": "L_Collar",
+      "ok": true
+    },
+    {
+      "target_bone": "RightShoulder",
+      "source_bone": "R_Collar",
+      "ok": true
+    }
+  ]
+}

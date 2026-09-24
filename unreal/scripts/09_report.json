@@ -1,0 +1,100 @@
+{
+  "help_get_source_chain": "x.get_source_chain(target_chain_name, op_name=\"None\") -> Name\nGet the name of the source chain mapped to a given target chain (the chain animation is copied FROM).\n\nArgs:\n    target_chain_name (Name): the name of the target retarget chain to get a mapping for\n    op_name (Name): if specified, will get the source chain for that op (otherwise gets the first chain mapping in the op stack)\n\nReturns:\n    Name: the name of the source chain mapped to the given target chain (or None if not mapped)",
+  "help_get_num_retarget_ops": "x.get_num_retarget_ops() -> int32\nGet the number of Ops in the stack.\n\nReturns:\n    int32: int, the number of ops",
+  "help_get_op_name": "x.get_op_name(op_index) -> Name\nGet the name of the op at the given index in the stack.\n\nArgs:\n    op_index (int32): the index of the op to get the name of\n\nReturns:\n    Name: the name of the op or None if the index was invalid",
+  "help_get_retarget_op_enabled": "x.get_retarget_op_enabled(retarget_op_index) -> bool\nGet enabled status of the given Op.\n\nArgs:\n    retarget_op_index (int32): the index of the op to get the enabled state for\n\nReturns:\n    bool: true if op is enabled, false if op is disabled or not found",
+  "num_ops": 5,
+  "op_names": [
+    "Pelvis Motion",
+    "FK Chains",
+    "Run IK Rig",
+    "Root Motion",
+    "Remap Curves"
+  ],
+  "mappings": [
+    {
+      "target_chain": "Spine",
+      "source_chain": "Spine"
+    },
+    {
+      "target_chain": "Neck",
+      "source_chain": "Neck"
+    },
+    {
+      "target_chain": "Head",
+      "source_chain": "Head"
+    },
+    {
+      "target_chain": "LeftLeg",
+      "source_chain": "LeftLeg"
+    },
+    {
+      "target_chain": "LeftFoot",
+      "source_chain": "LeftFoot"
+    },
+    {
+      "target_chain": "LeftClavicle",
+      "source_chain": "LeftClavicle"
+    },
+    {
+      "target_chain": "LeftArm",
+      "source_chain": "LeftArm"
+    },
+    {
+      "target_chain": "LeftThumb",
+      "source_chain": "LeftArm"
+    },
+    {
+      "target_chain": "LeftIndex",
+      "source_chain": "LeftLeg"
+    },
+    {
+      "target_chain": "LeftMiddle",
+      "source_chain": "LeftClavicle"
+    },
+    {
+      "target_chain": "LeftRing",
+      "source_chain": "LeftLeg"
+    },
+    {
+      "target_chain": "LeftPinky",
+      "source_chain": "LeftFoot"
+    },
+    {
+      "target_chain": "RightLeg",
+      "source_chain": "RightLeg"
+    },
+    {
+      "target_chain": "RightFoot",
+      "source_chain": "RightFoot"
+    },
+    {
+      "target_chain": "RightClavicle",
+      "source_chain": "RightClavicle"
+    },
+    {
+      "target_chain": "RightArm",
+      "source_chain": "RightArm"
+    },
+    {
+      "target_chain": "RightThumb",
+      "source_chain": "RightArm"
+    },
+    {
+      "target_chain": "RightIndex",
+      "source_chain": "RightLeg"
+    },
+    {
+      "target_chain": "RightMiddle",
+      "source_chain": "RightClavicle"
+    },
+    {
+      "target_chain": "RightRing",
+      "source_chain": "RightLeg"
+    },
+    {
+      "target_chain": "RightPinky",
+      "source_chain": "RightFoot"
+    }
+  ]
+}

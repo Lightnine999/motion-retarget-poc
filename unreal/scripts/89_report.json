@@ -1,0 +1,18 @@
+{
+  "legacy_root_settings": {
+    "affect_ik_horizontal": "1.0",
+    "affect_ik_vertical": "0.0",
+    "blend_to_source": "0.0",
+    "blend_to_source_weights": "<Struct 'Vector' (0x81a776e9e00) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+    "rotation_alpha": "1.0",
+    "rotation_offset": "<Struct 'Rotator' (0x81a776e9e38) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+    "scale_horizontal": "1.0",
+    "scale_vertical": "1.0",
+    "translation_alpha": "1.0",
+    "translation_offset": "<Struct 'Vector' (0x81a776e9e20) {x: 0.000000, y: 0.000000, z: 0.000000}>"
+  },
+  "pelvis_op_direct_props": {
+    "get_source_pelvis_bone": "Pelvis",
+    "get_target_pelvis_bone": "Hips"
+  }
+}

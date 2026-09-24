@@ -1,0 +1,18 @@
+{
+  "help_set_ik_rig": "x.set_ik_rig(source_or_target, ik_rig) -> None\nSet the IK Rig to use as the source or target (to copy animation FROM/TO)\n\nArgs:\n    source_or_target (RetargetSourceOrTarget): an enum specifying either \"Source\" or \"Target\"\n    ik_rig (IKRigDefinition):",
+  "help_auto_map_chains": "x.auto_map_chains(auto_map_type, force_remap, op_name=\"None\") -> None\nUse string comparision to find \"best\" Source chain to map to each Target chain or clear the mappings\n\nArgs:\n    auto_map_type (AutoMapChainType): an enum specifying the type of mapping to perform (ie, Exact, Fuzzy or Clear)\n    force_remap (bool): if false, will only remap those mappings that unset/None\n    op_name (Name): if specified, will auto-map only the chain mapping in the specified op, otherwise applies to all ops",
+  "help_get_controller": "X.get_controller(retargeter_asset) -> IKRetargeterController\nGet the controller for the given retargeter asset\n\nArgs:\n    retargeter_asset (IKRetargeter): an IK Retarget asset\n\nReturns:\n    IKRetargeterController: the controller with an API for modifying the given retarget asset",
+  "help_add_default_ops": "x.add_default_ops() -> None\nAutomatically add basic retargeting operations\nAdds these ops in the following order: Pelvis Motion, FK Chains, IK Chains, IK Solve and Root Motion\nIf any of these ops are already present, they will not be re-added.",
+  "help_duplicate_and_retarget": "X.duplicate_and_retarget(assets_to_retarget, source_mesh, target_mesh, ik_retarget_asset, search=\"\", replace=\"\", prefix=\"\", suffix=\"\", target_path=\"\", use_source_path=False, include_referenced_assets=True, overwrite_existing_files=False) -> Array[AssetData]\n\ndeprecated: Use RunBatchRetarget instead. It uses a struct for better future-proofing and cleaner Blueprint graphs.\ndeprecated: This function is deprecated. Please use RunBatchRetarget which takes a FIKRetargetBatchOperationInputs struct.\n\nArgs:\n    assets_to_retarget (Array[AssetData]): \n    source_mesh (SkeletalMesh): \n    target_mesh (SkeletalMesh): \n    ik_retarget_asset (IKRetargeter): \n    search (str): \n    replace (str): \n    prefix (str): \n    suffix (str): \n    target_path (str): \n    use_source_path (bool): \n    include_referenced_assets (bool): \n    overwrite_existing_files (bool): \n\nReturns:\n    Array[AssetData]:",
+  "help_get_all_target_ik_rigs": "x.get_all_target_ik_rigs() -> Array[IKRigDefinition]\nGet all target IK Rigs referenced by all ops\n\nReturns:\n    Array[IKRigDefinition]: an array of all target IK Rig assets associated with all the ops in the stack",
+  "retarget_source_or_target_members": [
+    "SOURCE",
+    "TARGET",
+    "cast",
+    "get_display_name",
+    "name",
+    "static_enum",
+    "value"
+  ],
+  "retargeter_is_none": false
+}

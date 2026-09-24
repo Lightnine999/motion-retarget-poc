@@ -1,0 +1,167 @@
+{
+  "help_apply_auto": "x.apply_auto_generated_retarget_definition() -> bool\nAnalyse the skeleton to see if it matches a known template and automatically generates all retarget chains and sets the pelvis\nReturns true if a matching skeletal template was found and the retarget definition for it was applied.\n\nReturns:\n    bool:",
+  "help_set_skeletal_mesh": "x.set_skeletal_mesh(skeletal_mesh) -> bool\nSets the preview mesh to use. Loads the hierarchy into the asset's IKRigSkeleton.\nReturns true if the mesh was able to be set. False if it was incompatible for any reason.\n\nArgs:\n    skeletal_mesh (SkeletalMesh): \n\nReturns:\n    bool:",
+  "help_get_root_bone": "deprecated: 'get_root_bone' was renamed to 'get_start_bone'.",
+  "help_get_retarget_chains": "x.get_retarget_chains() -> Array[BoneChain]\nGet read-only access to the list of Chains.\n\nReturns:\n    Array[BoneChain]:",
+  "help_get_controller": "X.get_controller(ik_rig_definition) -> IKRigController\nUse this to get the controller for the given IKRig\n\nArgs:\n    ik_rig_definition (IKRigDefinition): \n\nReturns:\n    IKRigController:",
+  "help_bonechain_to_dict": "to_dict(self) -> Dict[str, object] -- convert this Unreal struct into a dict of its properties",
+  "help_get_bone_children": "X.get_bone_children(skeletal_mesh, bone_name) -> Array[Name]\nGet the direct children of a bone in a skeletal mesh.\n\nArgs:\n    skeletal_mesh (SkeletalMesh): The mesh to query.\n    bone_name (Name): The name of the bone to query.\n\nReturns:\n    Array[Name]: An array of bone names that are direct children of the given bone.",
+  "help_get_bone_parent": "X.get_bone_parent(skeletal_mesh, bone_name) -> Name\nGet the parent bone name of a bone in a skeletal mesh.\n\nArgs:\n    skeletal_mesh (SkeletalMesh): The mesh to query.\n    bone_name (Name): The name of the bone to query.\n\nReturns:\n    Name: The name of the parent bone, or NAME_None if the bone is the root or does not exist.",
+  "help_create_asset": "x.create_asset(asset_name, package_path, asset_class, factory, calling_context=\"None\", overwrite_existing=False) -> Object\nCreates an asset with the specified name, path, and factory\n\nArgs:\n    asset_name (str): the name of the new asset\n    package_path (str): the package that will contain the new asset\n    asset_class (type(Class)): the class of the new asset\n    factory (Factory): the factory that will build the new asset\n    calling_context (Name): optional name of the module or method calling CreateAsset() - this is passed to the factory\n    overwrite_existing (bool): if set to true, this will overwrite an existing object without prompting\n\nReturns:\n    Object: the new asset or NULL if it fails",
+  "source_ikrig_asset_is_none": false,
+  "source_retarget_root_before_auto": "None",
+  "source_apply_auto_result": "True",
+  "source_retarget_root_after_auto": "None",
+  "source_chains": [
+    {
+      "chain_name": "Spine",
+      "start_bone": "Spine1",
+      "end_bone": "Spine3",
+      "ik_goal": "None"
+    },
+    {
+      "chain_name": "Neck",
+      "start_bone": "Neck",
+      "end_bone": "Neck",
+      "ik_goal": "None"
+    },
+    {
+      "chain_name": "Head",
+      "start_bone": "Head",
+      "end_bone": "Head",
+      "ik_goal": "None"
+    }
+  ],
+  "target_ikrig_asset_is_none": false,
+  "target_retarget_root_before_auto": "Hips",
+  "target_apply_auto_result": "True",
+  "target_retarget_root_after_auto": "Hips",
+  "target_chains": [
+    {
+      "chain_name": "Spine",
+      "start_bone": "Spine",
+      "end_bone": "Spine2",
+      "ik_goal": "None"
+    },
+    {
+      "chain_name": "Neck",
+      "start_bone": "Neck",
+      "end_bone": "Neck",
+      "ik_goal": "None"
+    },
+    {
+      "chain_name": "Head",
+      "start_bone": "Head",
+      "end_bone": "Head",
+      "ik_goal": "None"
+    },
+    {
+      "chain_name": "LeftLeg",
+      "start_bone": "LeftUpLeg",
+      "end_bone": "LeftFoot",
+      "ik_goal": "LeftFootIK"
+    },
+    {
+      "chain_name": "LeftFoot",
+      "start_bone": "LeftToeBase",
+      "end_bone": "LeftToeBase",
+      "ik_goal": "None"
+    },
+    {
+      "chain_name": "LeftClavicle",
+      "start_bone": "LeftShoulder",
+      "end_bone": "LeftShoulder",
+      "ik_goal": "None"
+    },
+    {
+      "chain_name": "LeftArm",
+      "start_bone": "LeftArm",
+      "end_bone": "LeftHand",
+      "ik_goal": "LeftHandIK"
+    },
+    {
+      "chain_name": "LeftThumb",
+      "start_bone": "LeftHandThumb1",
+      "end_bone": "LeftHandThumb3",
+      "ik_goal": "None"
+    },
+    {
+      "chain_name": "LeftIndex",
+      "start_bone": "LeftHandIndex1",
+      "end_bone": "LeftHandIndex3",
+      "ik_goal": "None"
+    },
+    {
+      "chain_name": "LeftMiddle",
+      "start_bone": "LeftHandMiddle1",
+      "end_bone": "LeftHandMiddle3",
+      "ik_goal": "None"
+    },
+    {
+      "chain_name": "LeftRing",
+      "start_bone": "LeftHandRing1",
+      "end_bone": "LeftHandRing3",
+      "ik_goal": "None"
+    },
+    {
+      "chain_name": "LeftPinky",
+      "start_bone": "LeftHandPinky1",
+      "end_bone": "LeftHandPinky3",
+      "ik_goal": "None"
+    },
+    {
+      "chain_name": "RightLeg",
+      "start_bone": "RightUpLeg",
+      "end_bone": "RightFoot",
+      "ik_goal": "RightFootIK"
+    },
+    {
+      "chain_name": "RightFoot",
+      "start_bone": "RightToeBase",
+      "end_bone": "RightToeBase",
+      "ik_goal": "None"
+    },
+    {
+      "chain_name": "RightClavicle",
+      "start_bone": "RightShoulder",
+      "end_bone": "RightShoulder",
+      "ik_goal": "None"
+    },
+    {
+      "chain_name": "RightArm",
+      "start_bone": "RightArm",
+      "end_bone": "RightHand",
+      "ik_goal": "RightHandIK"
+    },
+    {
+      "chain_name": "RightThumb",
+      "start_bone": "RightHandThumb1",
+      "end_bone": "RightHandThumb3",
+      "ik_goal": "None"
+    },
+    {
+      "chain_name": "RightIndex",
+      "start_bone": "RightHandIndex1",
+      "end_bone": "RightHandIndex3",
+      "ik_goal": "None"
+    },
+    {
+      "chain_name": "RightMiddle",
+      "start_bone": "RightHandMiddle1",
+      "end_bone": "RightHandMiddle3",
+      "ik_goal": "None"
+    },
+    {
+      "chain_name": "RightRing",
+      "start_bone": "RightHandRing1",
+      "end_bone": "RightHandRing3",
+      "ik_goal": "None"
+    },
+    {
+      "chain_name": "RightPinky",
+      "start_bone": "RightHandPinky1",
+      "end_bone": "RightHandPinky3",
+      "ik_goal": "None"
+    }
+  ]
+}

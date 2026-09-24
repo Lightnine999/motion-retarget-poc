@@ -1,0 +1,16 @@
+{
+  "before_rotate_with_pelvis": "False",
+  "after_rotate_with_pelvis": "True",
+  "result_paths": [
+    "/Game/Retarget/Animations/SMPL_Source_Anim_OnMixamo_FK_PelvisFix"
+  ],
+  "max_frame_to_frame_angle_deg_after_fix": {
+    "Hips": 0.0,
+    "Spine": 13.8,
+    "Spine1": 4.9,
+    "Spine2": 5.6,
+    "Neck": 13.1,
+    "LeftShoulder": 7.5,
+    "RightShoulder": 8.2
+  }
+}

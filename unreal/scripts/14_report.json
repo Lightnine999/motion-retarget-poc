@@ -1,0 +1,9 @@
+{
+  "help_get_bone_poses_for_time": "X.get_bone_poses_for_time(animation_sequence_base, bone_names, time, extract_root_motion, preview_mesh=None) -> Array[Transform]\nGet Bone Poses for Time\n\nArgs:\n    animation_sequence_base (AnimSequenceBase): \n    bone_names (Array[Name]): \n    time (float): \n    extract_root_motion (bool): \n    preview_mesh (SkeletalMesh): \n\nReturns:\n    Array[Transform]: \n\n    poses (Array[Transform]):",
+  "help_get_bone_poses_for_frame": "X.get_bone_poses_for_frame(animation_sequence_base, bone_names, frame, extract_root_motion, preview_mesh=None) -> Array[Transform]\nGet Bone Poses for Frame\n\nArgs:\n    animation_sequence_base (AnimSequenceBase): \n    bone_names (Array[Name]): \n    frame (int32): \n    extract_root_motion (bool): \n    preview_mesh (SkeletalMesh): \n\nReturns:\n    Array[Transform]: \n\n    poses (Array[Transform]):",
+  "help_get_raw_track_rotation_data": "X.get_raw_track_rotation_data(animation_sequence_base, track_name) -> Array[Quat]\nGet Raw Track Rotation Data\n\nArgs:\n    animation_sequence_base (AnimSequenceBase): \n    track_name (Name): \n\nReturns:\n    Array[Quat]: \n\n    rotation_data (Array[Quat]):",
+  "help_get_animation_track_names": "X.get_animation_track_names(animation_sequence_base) -> Array[Name]\nRetrieves the Names of the individual ATracks for the given Animation Sequence\n\nArgs:\n    animation_sequence_base (AnimSequenceBase): \n\nReturns:\n    Array[Name]: \n\n    track_names (Array[Name]):",
+  "help_get_num_frames": "X.get_num_frames(animation_sequence_base) -> int32\nRetrieves the number of animation frames for the given Animation Sequence\n\nArgs:\n    animation_sequence_base (AnimSequenceBase): \n\nReturns:\n    int32: \n\n    num_frames (int32):",
+  "num_frames": 0,
+  "track_names": []
+}

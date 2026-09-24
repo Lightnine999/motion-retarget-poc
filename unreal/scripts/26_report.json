@@ -1,0 +1,12 @@
+{
+  "existing_actor_count": 3,
+  "existing_actor_labels": [
+    "PreviewCamera",
+    "PreviewLight",
+    "PreviewSky"
+  ],
+  "char_actor_is_none": true,
+  "camera_actor_is_none": false,
+  "light_actor_is_none": false,
+  "sky_actor_is_none": false
+}

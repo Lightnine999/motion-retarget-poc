@@ -1,0 +1,61 @@
+{
+  "chain_settings": {
+    "Spine": {
+      "translation_mode": "ERR: TargetChainSettings: Failed to find property 'translation_mode' for attribute 'translation_mode' on 'TargetChainSettings'",
+      "rotation_mode": "ERR: TargetChainSettings: Failed to find property 'rotation_mode' for attribute 'rotation_mode' on 'TargetChainSettings'",
+      "static_offset": "ERR: TargetChainSettings: Failed to find property 'static_offset' for attribute 'static_offset' on 'TargetChainSettings'",
+      "static_local_offset": "ERR: TargetChainSettings: Failed to find property 'static_local_offset' for attribute 'static_local_offset' on 'TargetChainSettings'",
+      "static_rotation_offset": "ERR: TargetChainSettings: Failed to find property 'static_rotation_offset' for attribute 'static_rotation_offset' on 'TargetChainSettings'",
+      "extension": "ERR: TargetChainSettings: Failed to find property 'extension' for attribute 'extension' on 'TargetChainSettings'",
+      "translation_alpha": "ERR: TargetChainSettings: Failed to find property 'translation_alpha' for attribute 'translation_alpha' on 'TargetChainSettings'",
+      "rotation_alpha": "ERR: TargetChainSettings: Failed to find property 'rotation_alpha' for attribute 'rotation_alpha' on 'TargetChainSettings'",
+      "source_chain": "ERR: TargetChainSettings: Failed to find property 'source_chain' for attribute 'source_chain' on 'TargetChainSettings'"
+    },
+    "LeftLeg": {
+      "translation_mode": "ERR: TargetChainSettings: Failed to find property 'translation_mode' for attribute 'translation_mode' on 'TargetChainSettings'",
+      "rotation_mode": "ERR: TargetChainSettings: Failed to find property 'rotation_mode' for attribute 'rotation_mode' on 'TargetChainSettings'",
+      "static_offset": "ERR: TargetChainSettings: Failed to find property 'static_offset' for attribute 'static_offset' on 'TargetChainSettings'",
+      "static_local_offset": "ERR: TargetChainSettings: Failed to find property 'static_local_offset' for attribute 'static_local_offset' on 'TargetChainSettings'",
+      "static_rotation_offset": "ERR: TargetChainSettings: Failed to find property 'static_rotation_offset' for attribute 'static_rotation_offset' on 'TargetChainSettings'",
+      "extension": "ERR: TargetChainSettings: Failed to find property 'extension' for attribute 'extension' on 'TargetChainSettings'",
+      "translation_alpha": "ERR: TargetChainSettings: Failed to find property 'translation_alpha' for attribute 'translation_alpha' on 'TargetChainSettings'",
+      "rotation_alpha": "ERR: TargetChainSettings: Failed to find property 'rotation_alpha' for attribute 'rotation_alpha' on 'TargetChainSettings'",
+      "source_chain": "ERR: TargetChainSettings: Failed to find property 'source_chain' for attribute 'source_chain' on 'TargetChainSettings'"
+    },
+    "RightLeg": {
+      "translation_mode": "ERR: TargetChainSettings: Failed to find property 'translation_mode' for attribute 'translation_mode' on 'TargetChainSettings'",
+      "rotation_mode": "ERR: TargetChainSettings: Failed to find property 'rotation_mode' for attribute 'rotation_mode' on 'TargetChainSettings'",
+      "static_offset": "ERR: TargetChainSettings: Failed to find property 'static_offset' for attribute 'static_offset' on 'TargetChainSettings'",
+      "static_local_offset": "ERR: TargetChainSettings: Failed to find property 'static_local_offset' for attribute 'static_local_offset' on 'TargetChainSettings'",
+      "static_rotation_offset": "ERR: TargetChainSettings: Failed to find property 'static_rotation_offset' for attribute 'static_rotation_offset' on 'TargetChainSettings'",
+      "extension": "ERR: TargetChainSettings: Failed to find property 'extension' for attribute 'extension' on 'TargetChainSettings'",
+      "translation_alpha": "ERR: TargetChainSettings: Failed to find property 'translation_alpha' for attribute 'translation_alpha' on 'TargetChainSettings'",
+      "rotation_alpha": "ERR: TargetChainSettings: Failed to find property 'rotation_alpha' for attribute 'rotation_alpha' on 'TargetChainSettings'",
+      "source_chain": "ERR: TargetChainSettings: Failed to find property 'source_chain' for attribute 'source_chain' on 'TargetChainSettings'"
+    },
+    "Neck": {
+      "translation_mode": "ERR: TargetChainSettings: Failed to find property 'translation_mode' for attribute 'translation_mode' on 'TargetChainSettings'",
+      "rotation_mode": "ERR: TargetChainSettings: Failed to find property 'rotation_mode' for attribute 'rotation_mode' on 'TargetChainSettings'",
+      "static_offset": "ERR: TargetChainSettings: Failed to find property 'static_offset' for attribute 'static_offset' on 'TargetChainSettings'",
+      "static_local_offset": "ERR: TargetChainSettings: Failed to find property 'static_local_offset' for attribute 'static_local_offset' on 'TargetChainSettings'",
+      "static_rotation_offset": "ERR: TargetChainSettings: Failed to find property 'static_rotation_offset' for attribute 'static_rotation_offset' on 'TargetChainSettings'",
+      "extension": "ERR: TargetChainSettings: Failed to find property 'extension' for attribute 'extension' on 'TargetChainSettings'",
+      "translation_alpha": "ERR: TargetChainSettings: Failed to find property 'translation_alpha' for attribute 'translation_alpha' on 'TargetChainSettings'",
+      "rotation_alpha": "ERR: TargetChainSettings: Failed to find property 'rotation_alpha' for attribute 'rotation_alpha' on 'TargetChainSettings'",
+      "source_chain": "ERR: TargetChainSettings: Failed to find property 'source_chain' for attribute 'source_chain' on 'TargetChainSettings'"
+    },
+    "Head": {
+      "translation_mode": "ERR: TargetChainSettings: Failed to find property 'translation_mode' for attribute 'translation_mode' on 'TargetChainSettings'",
+      "rotation_mode": "ERR: TargetChainSettings: Failed to find property 'rotation_mode' for attribute 'rotation_mode' on 'TargetChainSettings'",
+      "static_offset": "ERR: TargetChainSettings: Failed to find property 'static_offset' for attribute 'static_offset' on 'TargetChainSettings'",
+      "static_local_offset": "ERR: TargetChainSettings: Failed to find property 'static_local_offset' for attribute 'static_local_offset' on 'TargetChainSettings'",
+      "static_rotation_offset": "ERR: TargetChainSettings: Failed to find property 'static_rotation_offset' for attribute 'static_rotation_offset' on 'TargetChainSettings'",
+      "extension": "ERR: TargetChainSettings: Failed to find property 'extension' for attribute 'extension' on 'TargetChainSettings'",
+      "translation_alpha": "ERR: TargetChainSettings: Failed to find property 'translation_alpha' for attribute 'translation_alpha' on 'TargetChainSettings'",
+      "rotation_alpha": "ERR: TargetChainSettings: Failed to find property 'rotation_alpha' for attribute 'rotation_alpha' on 'TargetChainSettings'",
+      "source_chain": "ERR: TargetChainSettings: Failed to find property 'source_chain' for attribute 'source_chain' on 'TargetChainSettings'"
+    }
+  },
+  "global_settings": "<Struct 'RetargetGlobalSettings' (0x9853679c380) {}>",
+  "root_settings": "<Struct 'TargetRootSettings' (0x985367b0a10) {}>"
+}

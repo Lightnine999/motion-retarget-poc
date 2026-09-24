@@ -1,0 +1,89 @@
+{
+  "help_set_source_chain": "x.set_source_chain(source_chain_name, target_chain_name, op_name=\"None\") -> bool\nAssign a source chain to the given target chain. Animation will be copied from the source to the target.\n\nArgs:\n    source_chain_name (Name): the name of the source retarget chain to assign\n    target_chain_name (Name): the name of the target chain to map\n    op_name (Name): if specified, will set the source chain only for that op (otherwise applies to all ops with a chain mapping)\n\nReturns:\n    bool:",
+  "mappings_after_fix": [
+    {
+      "target_chain": "Spine",
+      "source_chain": "Spine"
+    },
+    {
+      "target_chain": "Neck",
+      "source_chain": "Neck"
+    },
+    {
+      "target_chain": "Head",
+      "source_chain": "Head"
+    },
+    {
+      "target_chain": "LeftLeg",
+      "source_chain": "LeftLeg"
+    },
+    {
+      "target_chain": "LeftFoot",
+      "source_chain": "LeftFoot"
+    },
+    {
+      "target_chain": "LeftClavicle",
+      "source_chain": "LeftClavicle"
+    },
+    {
+      "target_chain": "LeftArm",
+      "source_chain": "LeftArm"
+    },
+    {
+      "target_chain": "LeftThumb",
+      "source_chain": "None"
+    },
+    {
+      "target_chain": "LeftIndex",
+      "source_chain": "None"
+    },
+    {
+      "target_chain": "LeftMiddle",
+      "source_chain": "None"
+    },
+    {
+      "target_chain": "LeftRing",
+      "source_chain": "None"
+    },
+    {
+      "target_chain": "LeftPinky",
+      "source_chain": "None"
+    },
+    {
+      "target_chain": "RightLeg",
+      "source_chain": "RightLeg"
+    },
+    {
+      "target_chain": "RightFoot",
+      "source_chain": "RightFoot"
+    },
+    {
+      "target_chain": "RightClavicle",
+      "source_chain": "RightClavicle"
+    },
+    {
+      "target_chain": "RightArm",
+      "source_chain": "RightArm"
+    },
+    {
+      "target_chain": "RightThumb",
+      "source_chain": "None"
+    },
+    {
+      "target_chain": "RightIndex",
+      "source_chain": "None"
+    },
+    {
+      "target_chain": "RightMiddle",
+      "source_chain": "None"
+    },
+    {
+      "target_chain": "RightRing",
+      "source_chain": "None"
+    },
+    {
+      "target_chain": "RightPinky",
+      "source_chain": "None"
+    }
+  ]
+}

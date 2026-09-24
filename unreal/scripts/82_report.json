@@ -1,0 +1,21 @@
+{
+  "num_frames": 311,
+  "discontinuities_over_25deg": {
+    "Pelvis": [],
+    "Spine1": [],
+    "Spine2": [],
+    "Spine3": [],
+    "Neck": [],
+    "L_Shoulder": [],
+    "R_Shoulder": []
+  },
+  "max_frame_to_frame_angle_deg": {
+    "Pelvis": 9.9,
+    "Spine1": 8.8,
+    "Spine2": 7.3,
+    "Spine3": 4.9,
+    "Neck": 13.1,
+    "L_Shoulder": 11.5,
+    "R_Shoulder": 17.8
+  }
+}

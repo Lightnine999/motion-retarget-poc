@@ -1,0 +1,924 @@
+{
+  "world_is_none": false,
+  "num_frames": 311,
+  "error_refresh_0": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_0": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_0": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_0": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_7": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_7": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_7": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_7": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_14": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_14": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_14": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_14": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_21": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_21": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_21": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_21": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_28": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_28": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_28": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_28": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_35": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_35": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_35": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_35": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_42": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_42": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_42": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_42": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_49": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_49": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_49": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_49": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_56": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_56": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_56": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_56": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_63": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_63": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_63": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_63": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_70": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_70": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_70": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_70": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_77": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_77": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_77": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_77": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_84": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_84": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_84": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_84": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_91": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_91": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_91": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_91": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_98": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_98": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_98": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_98": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_105": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_105": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_105": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_105": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_112": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_112": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_112": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_112": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_119": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_119": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_119": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_119": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_126": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_126": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_126": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_126": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_133": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_133": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_133": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_133": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_140": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_140": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_140": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_140": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_147": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_147": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_147": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_147": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_154": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_154": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_154": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_154": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_161": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_161": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_161": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_161": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_168": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_168": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_168": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_168": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_175": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_175": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_175": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_175": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_182": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_182": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_182": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_182": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_189": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_189": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_189": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_189": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_196": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_196": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_196": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_196": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_203": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_203": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_203": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_203": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_210": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_210": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_210": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_210": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_217": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_217": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_217": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_217": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_224": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_224": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_224": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_224": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_231": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_231": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_231": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_231": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_238": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_238": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_238": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_238": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_245": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_245": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_245": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_245": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_252": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_252": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_252": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_252": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_259": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_259": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_259": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_259": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_266": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_266": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_266": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_266": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_273": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_273": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_273": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_273": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_280": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_280": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_280": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_280": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_287": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_287": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_287": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_287": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_294": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_294": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_294": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_294": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_301": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_301": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_301": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_301": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "error_refresh_308": "'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'",
+  "traceback_refresh_308": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 61, in <lambda>\n    safe(f\"refresh_{f}\", lambda: skel_comp.refresh_bone_transforms())\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'refresh_bone_transforms'\n",
+  "error_tick_308": "'SkeletalMeshComponent' object has no attribute 'tick_component'",
+  "traceback_tick_308": "Traceback (most recent call last):\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 18, in safe\n    return fn()\n           ^^^^\n  File \"/Users/kwonkwanggoo/motion-retarget-poc/unreal/scripts/77_worldspace_verify.py\", line 62, in <lambda>\n    safe(f\"tick_{f}\", lambda: skel_comp.tick_component(0.0333, unreal.LevelTick.LEVELTICK_ALL, None))\n                              ^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'SkeletalMeshComponent' object has no attribute 'tick_component'\n",
+  "per_frame": [
+    {
+      "frame": 0,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 7,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 14,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 21,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 28,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 35,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 42,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 49,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 56,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 63,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 70,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 77,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 84,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 91,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 98,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 105,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 112,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 119,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 126,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 133,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 140,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 147,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 154,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 161,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 168,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 175,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 182,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 189,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 196,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 203,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 210,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 217,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 224,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 231,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 238,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 245,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 252,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 259,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 266,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 273,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 280,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 287,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 294,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 301,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    },
+    {
+      "frame": 308,
+      "seg": {
+        "Hips-Spine": 10.13,
+        "Spine-Spine1": 11.81,
+        "Spine1-Spine2": 13.5,
+        "Spine2-Neck": 15.19,
+        "Neck-Head": 8.13
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.19,
+        "LeftHand_RightHand_dist": 137.11,
+        "LeftFoot_RightFoot_dist": 29.66
+      },
+      "hips_z": 96.06
+    }
+  ],
+  "rigidity_issues": [],
+  "lr_summary": {
+    "LeftShoulder_RightShoulder_dist": {
+      "min": 14.19,
+      "max": 14.19,
+      "mean": 14.19
+    },
+    "LeftHand_RightHand_dist": {
+      "min": 137.11,
+      "max": 137.11,
+      "mean": 137.11
+    },
+    "LeftFoot_RightFoot_dist": {
+      "min": 29.66,
+      "max": 29.66,
+      "mean": 29.66
+    }
+  }
+}

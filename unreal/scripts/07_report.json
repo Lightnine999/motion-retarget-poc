@@ -1,0 +1,62 @@
+{
+  "help_add_retarget_chain": "x.add_retarget_chain(chain_name, start_bone_name, end_bone_name, goal_name) -> Name\nAdd a new chain with the given Chain and Bone names. Returns newly created chain name (uniquified).\nNote: only the ChainName is required here, all else can be set later.\n\nArgs:\n    chain_name (Name): \n    start_bone_name (Name): \n    end_bone_name (Name): \n    goal_name (Name): \n\nReturns:\n    Name:",
+  "help_set_retarget_root": "x.set_retarget_root(root_bone_name) -> bool\nSet the Pelvis Bone of the retargeting (can only be one).\n\nArgs:\n    root_bone_name (Name): \n\nReturns:\n    bool:",
+  "final_chain_summaries": [
+    {
+      "chain_name": "Spine",
+      "start_bone": "Spine1",
+      "end_bone": "Spine3"
+    },
+    {
+      "chain_name": "Neck",
+      "start_bone": "Neck",
+      "end_bone": "Neck"
+    },
+    {
+      "chain_name": "Head",
+      "start_bone": "Head",
+      "end_bone": "Head"
+    },
+    {
+      "chain_name": "LeftLeg",
+      "start_bone": "L_Hip",
+      "end_bone": "L_Ankle"
+    },
+    {
+      "chain_name": "LeftFoot",
+      "start_bone": "L_Foot",
+      "end_bone": "L_Foot"
+    },
+    {
+      "chain_name": "LeftClavicle",
+      "start_bone": "L_Collar",
+      "end_bone": "L_Collar"
+    },
+    {
+      "chain_name": "LeftArm",
+      "start_bone": "L_Shoulder",
+      "end_bone": "L_Hand"
+    },
+    {
+      "chain_name": "RightLeg",
+      "start_bone": "R_Hip",
+      "end_bone": "R_Ankle"
+    },
+    {
+      "chain_name": "RightFoot",
+      "start_bone": "R_Foot",
+      "end_bone": "R_Foot"
+    },
+    {
+      "chain_name": "RightClavicle",
+      "start_bone": "R_Collar",
+      "end_bone": "R_Collar"
+    },
+    {
+      "chain_name": "RightArm",
+      "start_bone": "R_Shoulder",
+      "end_bone": "R_Hand"
+    }
+  ],
+  "final_retarget_root": "Pelvis"
+}

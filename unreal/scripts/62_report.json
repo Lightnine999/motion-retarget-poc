@@ -1,0 +1,381 @@
+{
+  "op_names": [
+    "Pelvis Motion",
+    "FK Chains",
+    "Run IK Rig",
+    "Root Motion",
+    "Remap Curves"
+  ],
+  "fk_op_index": 1,
+  "fk_op_controller_dir": [
+    "acquire_editor_element_handle",
+    "call_method",
+    "cast",
+    "get_class",
+    "get_default_object",
+    "get_editor_property",
+    "get_fname",
+    "get_full_name",
+    "get_name",
+    "get_outer",
+    "get_outermost",
+    "get_package",
+    "get_path_name",
+    "get_settings",
+    "get_typed_outer",
+    "get_world",
+    "is_editor_property_overridden",
+    "is_package_external",
+    "modify",
+    "rename",
+    "reset_editor_property",
+    "set_editor_properties",
+    "set_editor_property",
+    "set_settings",
+    "static_class"
+  ],
+  "frame_0": {
+    "source_Spine1": {
+      "quat": [
+        -0.916,
+        0.303,
+        -0.253,
+        0.065
+      ],
+      "angle_deg": 172.5,
+      "axis": [
+        -0.918,
+        0.304,
+        -0.254
+      ]
+    },
+    "source_Spine2": {
+      "quat": [
+        -0.211,
+        0.01,
+        -0.036,
+        0.977
+      ],
+      "angle_deg": 24.7,
+      "axis": [
+        -0.985,
+        0.049,
+        -0.168
+      ]
+    },
+    "source_Spine3": {
+      "quat": [
+        0.225,
+        0.021,
+        -0.049,
+        0.973
+      ],
+      "angle_deg": 26.8,
+      "axis": [
+        0.974,
+        0.09,
+        -0.21
+      ]
+    },
+    "target_Spine": {
+      "quat": [
+        -0.058,
+        0.979,
+        -0.019,
+        -0.196
+      ],
+      "angle_deg": 202.6,
+      "axis": [
+        -0.059,
+        0.998,
+        -0.02
+      ]
+    },
+    "target_Spine1": {
+      "quat": [
+        0.002,
+        -0.007,
+        -0.021,
+        1.0
+      ],
+      "angle_deg": 2.5,
+      "axis": [
+        0.104,
+        -0.321,
+        -0.941
+      ]
+    },
+    "target_Spine2": {
+      "quat": [
+        -0.08,
+        -0.011,
+        -0.039,
+        0.996
+      ],
+      "angle_deg": 10.3,
+      "axis": [
+        -0.891,
+        -0.117,
+        -0.438
+      ]
+    }
+  },
+  "frame_50": {
+    "source_Spine1": {
+      "quat": [
+        -0.885,
+        0.343,
+        -0.315,
+        0.012
+      ],
+      "angle_deg": 178.7,
+      "axis": [
+        -0.885,
+        0.343,
+        -0.315
+      ]
+    },
+    "source_Spine2": {
+      "quat": [
+        -0.211,
+        0.034,
+        0.007,
+        0.977
+      ],
+      "angle_deg": 24.7,
+      "axis": [
+        -0.987,
+        0.159,
+        0.033
+      ]
+    },
+    "source_Spine3": {
+      "quat": [
+        0.238,
+        0.045,
+        -0.038,
+        0.97
+      ],
+      "angle_deg": 28.3,
+      "axis": [
+        0.971,
+        0.185,
+        -0.154
+      ]
+    },
+    "target_Spine": {
+      "quat": [
+        0.032,
+        -0.935,
+        -0.03,
+        0.353
+      ],
+      "angle_deg": 138.7,
+      "axis": [
+        0.034,
+        -0.999,
+        -0.032
+      ]
+    },
+    "target_Spine1": {
+      "quat": [
+        0.0,
+        0.016,
+        0.003,
+        1.0
+      ],
+      "angle_deg": 1.8,
+      "axis": [
+        0.012,
+        0.977,
+        0.212
+      ]
+    },
+    "target_Spine2": {
+      "quat": [
+        -0.069,
+        0.028,
+        -0.024,
+        0.997
+      ],
+      "angle_deg": 9.0,
+      "axis": [
+        -0.879,
+        0.364,
+        -0.308
+      ]
+    }
+  },
+  "frame_150": {
+    "source_Spine1": {
+      "quat": [
+        -0.865,
+        0.444,
+        -0.214,
+        -0.092
+      ],
+      "angle_deg": 190.6,
+      "axis": [
+        -0.869,
+        0.446,
+        -0.214
+      ]
+    },
+    "source_Spine2": {
+      "quat": [
+        -0.167,
+        0.02,
+        0.009,
+        0.986
+      ],
+      "angle_deg": 19.4,
+      "axis": [
+        -0.992,
+        0.119,
+        0.052
+      ]
+    },
+    "source_Spine3": {
+      "quat": [
+        0.301,
+        0.052,
+        -0.011,
+        0.952
+      ],
+      "angle_deg": 35.6,
+      "axis": [
+        0.985,
+        0.169,
+        -0.036
+      ]
+    },
+    "target_Spine": {
+      "quat": [
+        -0.383,
+        -0.261,
+        -0.016,
+        0.886
+      ],
+      "angle_deg": 55.3,
+      "axis": [
+        -0.826,
+        -0.563,
+        -0.033
+      ]
+    },
+    "target_Spine1": {
+      "quat": [
+        0.031,
+        0.008,
+        0.008,
+        0.999
+      ],
+      "angle_deg": 3.8,
+      "axis": [
+        0.94,
+        0.246,
+        0.237
+      ]
+    },
+    "target_Spine2": {
+      "quat": [
+        0.012,
+        0.038,
+        0.003,
+        0.999
+      ],
+      "angle_deg": 4.6,
+      "axis": [
+        0.295,
+        0.952,
+        0.084
+      ]
+    }
+  },
+  "frame_250": {
+    "source_Spine1": {
+      "quat": [
+        -0.848,
+        0.47,
+        -0.217,
+        -0.117
+      ],
+      "angle_deg": 193.4,
+      "axis": [
+        -0.854,
+        0.473,
+        -0.218
+      ]
+    },
+    "source_Spine2": {
+      "quat": [
+        -0.155,
+        -0.001,
+        -0.007,
+        0.988
+      ],
+      "angle_deg": 17.9,
+      "axis": [
+        -0.999,
+        -0.006,
+        -0.043
+      ]
+    },
+    "source_Spine3": {
+      "quat": [
+        0.315,
+        0.054,
+        -0.015,
+        0.948
+      ],
+      "angle_deg": 37.3,
+      "axis": [
+        0.985,
+        0.169,
+        -0.047
+      ]
+    },
+    "target_Spine": {
+      "quat": [
+        -0.445,
+        -0.315,
+        -0.087,
+        0.834
+      ],
+      "angle_deg": 67.0,
+      "axis": [
+        -0.807,
+        -0.57,
+        -0.157
+      ]
+    },
+    "target_Spine1": {
+      "quat": [
+        0.04,
+        -0.008,
+        0.002,
+        0.999
+      ],
+      "angle_deg": 4.6,
+      "axis": [
+        0.98,
+        -0.194,
+        0.038
+      ]
+    },
+    "target_Spine2": {
+      "quat": [
+        0.03,
+        0.031,
+        -0.002,
+        0.999
+      ],
+      "angle_deg": 5.0,
+      "axis": [
+        0.693,
+        0.719,
+        -0.051
+      ]
+    }
+  }
+}

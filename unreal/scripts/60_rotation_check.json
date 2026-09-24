@@ -1,0 +1,53 @@
+{
+  "num_frames": 311,
+  "per_bone_jitter": {
+    "Neck": {
+      "max_delta_deg": 28.765636104324663,
+      "mean_delta_deg": 4.308557744499732,
+      "num_frames_over_90deg": 0,
+      "first_5_spikes": []
+    },
+    "LeftShoulder": {
+      "max_delta_deg": 25.697797497106155,
+      "mean_delta_deg": 4.389605608238563,
+      "num_frames_over_90deg": 0,
+      "first_5_spikes": []
+    },
+    "LeftArm": {
+      "max_delta_deg": 26.514377437753332,
+      "mean_delta_deg": 8.060122469124963,
+      "num_frames_over_90deg": 0,
+      "first_5_spikes": []
+    },
+    "LeftForeArm": {
+      "max_delta_deg": 31.839552928079527,
+      "mean_delta_deg": 12.993361994587358,
+      "num_frames_over_90deg": 0,
+      "first_5_spikes": []
+    },
+    "RightShoulder": {
+      "max_delta_deg": 16.731575662067225,
+      "mean_delta_deg": 4.11823656398508,
+      "num_frames_over_90deg": 0,
+      "first_5_spikes": []
+    },
+    "RightArm": {
+      "max_delta_deg": 27.810313804413173,
+      "mean_delta_deg": 8.203382196209784,
+      "num_frames_over_90deg": 0,
+      "first_5_spikes": []
+    },
+    "RightForeArm": {
+      "max_delta_deg": 30.511283823748258,
+      "mean_delta_deg": 13.225242879751518,
+      "num_frames_over_90deg": 0,
+      "first_5_spikes": []
+    },
+    "Spine2": {
+      "max_delta_deg": 26.947410896045312,
+      "mean_delta_deg": 2.808045745144188,
+      "num_frames_over_90deg": 0,
+      "first_5_spikes": []
+    }
+  }
+}

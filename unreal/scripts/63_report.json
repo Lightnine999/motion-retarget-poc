@@ -1,0 +1,41 @@
+{
+  "num_frames": 311,
+  "results": {
+    "Hips": {
+      "max": 9.9,
+      "mean": 2.62,
+      "num_spikes_over_60": 0,
+      "spikes": []
+    },
+    "Spine": {
+      "max": 16.4,
+      "mean": 3.18,
+      "num_spikes_over_60": 0,
+      "spikes": []
+    },
+    "Spine1": {
+      "max": 10.7,
+      "mean": 1.05,
+      "num_spikes_over_60": 0,
+      "spikes": []
+    },
+    "Spine2": {
+      "max": 26.9,
+      "mean": 2.81,
+      "num_spikes_over_60": 0,
+      "spikes": []
+    },
+    "Neck": {
+      "max": 28.8,
+      "mean": 4.31,
+      "num_spikes_over_60": 0,
+      "spikes": []
+    },
+    "Head": {
+      "max": 30.0,
+      "mean": 7.08,
+      "num_spikes_over_60": 0,
+      "spikes": []
+    }
+  }
+}

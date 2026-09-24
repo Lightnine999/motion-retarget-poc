@@ -185,6 +185,22 @@ Colab GPU 무료 쿼터가 소진돼 CPU 런타임으로 전환해 봤으나 `to
 
 로컬 Mac 환경(conda `gvhmr`, Python 3.10, torch 2.3.0 + MPS 인식, `pytorch3d` 0.7.8 소스 빌드 — macOS SDK 비호환 이슈는 `-Wno-invalid-specialization` 컴파일러 플래그로 우회)은 이미 구성해뒀다. GPU 확보 전략이 바뀌거나(예: 로컬에 eGPU/외장 NVIDIA를 붙이는 등) `.cuda()` 패치를 다시 시도할 필요가 생기면 이 환경을 그대로 재사용할 수 있다.
 
+### 2.9 리타겟팅 최종 파이프라인 — 재현 가이드 (2026-09-24)
+
+§2.7의 Motius 트위스트 미보정 문제와 [RETARGETING_JITTER_INVESTIGATION.md](RETARGETING_JITTER_INVESTIGATION.md) §3~§7의 긴 시행착오(스무딩 제거, 좌표축 변환, Blender depsgraph 갱신 버그) 끝에 확정된 **현재 가장 깨끗한 경로**를 순서대로 정리한다. 실패로 끝난 경로(Rokoko 디스파이크, Unreal IK Retargeter)는 여기서 뺐다 — 그 기록은 investigation 문서에 그대로 남아 있다.
+
+| # | 스크립트 | 실행 환경 | 입력 | 출력 | 핵심 주의점 |
+|---|---|---|---|---|---|
+| 1 | [kaggle/gvhmr_inference_kaggle.ipynb](kaggle/gvhmr_inference_kaggle.ipynb) | Kaggle GPU | 영상 클립 | `hmr4d_results.pt` | §2.8 참고, GPU 필수 |
+| 2 | `scripts/compute_smpl_fk.py` | conda `gvhmr` 환경 (torch+scipy) | `hmr4d_results.pt` | `smpl_params_raw.npz`, `smpl_params_fk.npz`, `smpl_params_fk_zup.npz` | **Motius를 거치지 않고** 직접 axis-angle → 부모체인 FK 합성. 스무딩이 전혀 섞이지 않는 게 핵심(§7.0) |
+| 3 | `scripts/export_smpl_source.py` (최초 1회만) | conda `gvhmr` (Motius) | `hmr4d_results.pt` | `smpl_source_clean.fbx` | 이 파일의 **애니메이션 자체는 쓰지 않는다** — 4번 단계에서 본 계층/레스트포즈(rest_basis)만 재사용하는 뼈대 소스로 임포트함 |
+| 4 | `scripts/rebuild_smpl_fbx_fk.py` | Blender `--background --python` | `smpl_params_fk_zup.npz` + `smpl_source_clean.fbx`(레스트포즈용) | `smpl_source_fk.fbx`, `fk_preview/*.png`(검증용 스크린샷) | `pose_bone.matrix = 절대행렬` 대입 직후 **반드시 `bpy.context.view_layer.update()`를 호출**할 것 — 안 하면 Blender가 자식 본 계산 시 부모의 갱신 전 상태를 참조해 몸 전체가 붕괴한다(§7.4, 이번 파이프라인에서 가장 잘 놓치는 지점) |
+| 5 | `scripts/retarget_onto_mixamo_blender.py` | Blender `--background --python` | `smpl_params_fk.npz`(Y-up 원본, zup 아님) + `blender/assets/mixamo_character.fbx` | `mixamo_character_fk_retarget.fbx`, `mixamo_fk_preview/*.png` | 대상 리그 오브젝트에 자체 회전/스케일 보정이 걸려있을 수 있다(Mixamo가 그렇다 — 90°+×0.01). **`pose_bone.matrix`는 월드 공간이 아니라 그 오브젝트의 로컬 공간**이므로, 좌표를 세계 공간으로 미리 변환하지 말고 리그의 원본 로컬 컨벤션(Y-up)을 그대로 쓸 것(§7.9) |
+| 6 | `scripts/render_stills_fk_retarget.py` | Blender `--background --python` | `mixamo_character_fk_retarget.fbx` | `frames_fk_retarget/frame_%04d.png` | 카메라를 고정값으로 두지 말고 메시 바운딩박스를 전체 프레임에서 샘플링해 자동으로 맞출 것 — 캐릭터 스케일/루트 위치가 파이프라인마다 달라 고정 카메라는 쉽게 프레임 밖으로 나간다 |
+| 7 | `ffmpeg` (PNG 시퀀스 → mp4, 원본과 hstack) | 셸 | `frames_fk_retarget/`, 원본 테니스 영상 | `side_by_side_fk_retarget.mp4` | `ffmpeg -y -framerate 30 -i frames_fk_retarget/frame_%04d.png -c:v libx264 -pix_fmt yuv420p mixamo_fk_retarget_render.mp4` 후 `ffmpeg -i <위 결과> -i <원본> -filter_complex "[1:v]scale=-2:480[a];[0:v]scale=-2:480[b];[a][b]hstack=inputs=2" side_by_side_fk_retarget.mp4` |
+
+**알려진 한계**: 2~7번 스크립트 전부 파일 상단에 입출력 경로가 **하드코딩**돼 있다(새 영상으로 돌리려면 각 스크립트 상단의 경로 상수를 직접 고쳐야 함) — CLI 인자화는 아직 안 돼 있다. 결과 비교 영상: [media/mixamo_fk_clean_comparison.mp4](media/mixamo_fk_clean_comparison.mp4).
+
 ## 4. 한계 및 향후 확장
 
 - 이번 POC는 사람 1명, 단순 동작(카메라 컷 없음)만 대상으로 한다.

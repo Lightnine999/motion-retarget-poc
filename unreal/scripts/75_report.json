@@ -1,0 +1,1067 @@
+{
+  "existing_skeleton_is_none": false,
+  "imported_paths": [
+    "/Game/Source/SMPL_Source_Anim.SMPL_Source_Anim"
+  ],
+  "anim_asset_data_valid": true,
+  "result_paths": [
+    {
+      "package_name": "/Game/Retarget/Animations/SMPL_Source_Anim_OnMixamo_FK",
+      "asset_name": "SMPL_Source_Anim_OnMixamo_FK",
+      "saved": true
+    }
+  ],
+  "target_anim_path": "/Game/Retarget/Animations/SMPL_Source_Anim_OnMixamo_FK",
+  "num_frames_source": 311,
+  "source_analysis": [
+    {
+      "frame": 0,
+      "seg": {
+        "Pelvis-Spine1": 1.0,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.1
+    },
+    {
+      "frame": 10,
+      "seg": {
+        "Pelvis-Spine1": 1.1,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.1
+    },
+    {
+      "frame": 20,
+      "seg": {
+        "Pelvis-Spine1": 1.1,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.1
+    },
+    {
+      "frame": 30,
+      "seg": {
+        "Pelvis-Spine1": 1.2,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.1
+    },
+    {
+      "frame": 40,
+      "seg": {
+        "Pelvis-Spine1": 1.3,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.1
+    },
+    {
+      "frame": 50,
+      "seg": {
+        "Pelvis-Spine1": 1.3,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.1
+    },
+    {
+      "frame": 60,
+      "seg": {
+        "Pelvis-Spine1": 1.3,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.1
+    },
+    {
+      "frame": 70,
+      "seg": {
+        "Pelvis-Spine1": 1.3,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.1
+    },
+    {
+      "frame": 80,
+      "seg": {
+        "Pelvis-Spine1": 1.3,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.1
+    },
+    {
+      "frame": 90,
+      "seg": {
+        "Pelvis-Spine1": 1.3,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.1
+    },
+    {
+      "frame": 100,
+      "seg": {
+        "Pelvis-Spine1": 1.3,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.1
+    },
+    {
+      "frame": 110,
+      "seg": {
+        "Pelvis-Spine1": 1.3,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.1
+    },
+    {
+      "frame": 120,
+      "seg": {
+        "Pelvis-Spine1": 1.1,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.0
+    },
+    {
+      "frame": 130,
+      "seg": {
+        "Pelvis-Spine1": 1.2,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.2
+    },
+    {
+      "frame": 140,
+      "seg": {
+        "Pelvis-Spine1": 1.2,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.2
+    },
+    {
+      "frame": 150,
+      "seg": {
+        "Pelvis-Spine1": 1.1,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.2
+    },
+    {
+      "frame": 160,
+      "seg": {
+        "Pelvis-Spine1": 1.1,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.1
+    },
+    {
+      "frame": 170,
+      "seg": {
+        "Pelvis-Spine1": 1.1,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.2
+    },
+    {
+      "frame": 180,
+      "seg": {
+        "Pelvis-Spine1": 1.1,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.2
+    },
+    {
+      "frame": 190,
+      "seg": {
+        "Pelvis-Spine1": 1.2,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.2
+    },
+    {
+      "frame": 200,
+      "seg": {
+        "Pelvis-Spine1": 1.3,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.2
+    },
+    {
+      "frame": 210,
+      "seg": {
+        "Pelvis-Spine1": 1.3,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.2
+    },
+    {
+      "frame": 220,
+      "seg": {
+        "Pelvis-Spine1": 1.1,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.1
+    },
+    {
+      "frame": 230,
+      "seg": {
+        "Pelvis-Spine1": 1.2,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.1
+    },
+    {
+      "frame": 240,
+      "seg": {
+        "Pelvis-Spine1": 1.3,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.3
+    },
+    {
+      "frame": 250,
+      "seg": {
+        "Pelvis-Spine1": 1.2,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.2
+    },
+    {
+      "frame": 260,
+      "seg": {
+        "Pelvis-Spine1": 1.2,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.2
+    },
+    {
+      "frame": 270,
+      "seg": {
+        "Pelvis-Spine1": 1.2,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.2
+    },
+    {
+      "frame": 280,
+      "seg": {
+        "Pelvis-Spine1": 1.2,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.2
+    },
+    {
+      "frame": 290,
+      "seg": {
+        "Pelvis-Spine1": 1.2,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.2
+    },
+    {
+      "frame": 300,
+      "seg": {
+        "Pelvis-Spine1": 1.2,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.2
+    },
+    {
+      "frame": 310,
+      "seg": {
+        "Pelvis-Spine1": 1.2,
+        "Spine1-Spine2": 0.2,
+        "Spine2-Spine3": 0.1,
+        "Spine3-Neck": 0.2,
+        "Neck-Head": 0.1
+      },
+      "lr": {
+        "L_Shoulder_R_Shoulder_dist": 0.0,
+        "L_Wrist_R_Wrist_dist": 0.0,
+        "L_Ankle_R_Ankle_dist": 0.0
+      },
+      "root_z": 1.3
+    }
+  ],
+  "num_frames_target": 311,
+  "target_analysis": [
+    {
+      "frame": 0,
+      "seg": {
+        "Hips-Spine": 10727.8,
+        "Spine-Spine1": 10716.0,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 10,
+      "seg": {
+        "Hips-Spine": 10937.6,
+        "Spine-Spine1": 10926.0,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 20,
+      "seg": {
+        "Hips-Spine": 11046.8,
+        "Spine-Spine1": 11035.5,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 30,
+      "seg": {
+        "Hips-Spine": 11898.7,
+        "Spine-Spine1": 11888.0,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 40,
+      "seg": {
+        "Hips-Spine": 12342.5,
+        "Spine-Spine1": 12332.1,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 50,
+      "seg": {
+        "Hips-Spine": 12830.3,
+        "Spine-Spine1": 12820.3,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 60,
+      "seg": {
+        "Hips-Spine": 13124.5,
+        "Spine-Spine1": 13114.6,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 70,
+      "seg": {
+        "Hips-Spine": 12985.7,
+        "Spine-Spine1": 12975.7,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 80,
+      "seg": {
+        "Hips-Spine": 12671.9,
+        "Spine-Spine1": 12661.7,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 90,
+      "seg": {
+        "Hips-Spine": 12733.0,
+        "Spine-Spine1": 12722.8,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 100,
+      "seg": {
+        "Hips-Spine": 12997.3,
+        "Spine-Spine1": 12987.3,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 110,
+      "seg": {
+        "Hips-Spine": 12542.3,
+        "Spine-Spine1": 12532.0,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 120,
+      "seg": {
+        "Hips-Spine": 10867.7,
+        "Spine-Spine1": 10857.1,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 130,
+      "seg": {
+        "Hips-Spine": 12032.6,
+        "Spine-Spine1": 12021.6,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 140,
+      "seg": {
+        "Hips-Spine": 11781.9,
+        "Spine-Spine1": 11770.7,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 150,
+      "seg": {
+        "Hips-Spine": 11598.1,
+        "Spine-Spine1": 11586.5,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 160,
+      "seg": {
+        "Hips-Spine": 10990.9,
+        "Spine-Spine1": 10979.1,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 170,
+      "seg": {
+        "Hips-Spine": 11414.0,
+        "Spine-Spine1": 11402.3,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 180,
+      "seg": {
+        "Hips-Spine": 11502.2,
+        "Spine-Spine1": 11490.6,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 190,
+      "seg": {
+        "Hips-Spine": 11966.9,
+        "Spine-Spine1": 11955.5,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 200,
+      "seg": {
+        "Hips-Spine": 12520.6,
+        "Spine-Spine1": 12509.7,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 210,
+      "seg": {
+        "Hips-Spine": 12649.9,
+        "Spine-Spine1": 12639.0,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 220,
+      "seg": {
+        "Hips-Spine": 11277.5,
+        "Spine-Spine1": 11266.4,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 230,
+      "seg": {
+        "Hips-Spine": 11539.3,
+        "Spine-Spine1": 11528.1,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 240,
+      "seg": {
+        "Hips-Spine": 12822.1,
+        "Spine-Spine1": 12810.7,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 250,
+      "seg": {
+        "Hips-Spine": 11637.2,
+        "Spine-Spine1": 11625.6,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 260,
+      "seg": {
+        "Hips-Spine": 11655.3,
+        "Spine-Spine1": 11643.8,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 270,
+      "seg": {
+        "Hips-Spine": 12448.3,
+        "Spine-Spine1": 12436.9,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 280,
+      "seg": {
+        "Hips-Spine": 12336.1,
+        "Spine-Spine1": 12324.7,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 290,
+      "seg": {
+        "Hips-Spine": 12080.4,
+        "Spine-Spine1": 12068.8,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 300,
+      "seg": {
+        "Hips-Spine": 12010.7,
+        "Spine-Spine1": 11998.9,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    },
+    {
+      "frame": 310,
+      "seg": {
+        "Hips-Spine": 12229.3,
+        "Spine-Spine1": 12217.7,
+        "Spine1-Spine2": 1.7,
+        "Spine2-Neck": 1.7,
+        "Neck-Head": 7.7
+      },
+      "lr": {
+        "LeftShoulder_RightShoulder_dist": 14.2,
+        "LeftHand_RightHand_dist": 0.0,
+        "LeftFoot_RightFoot_dist": 0.0
+      },
+      "root_z": 0.0
+    }
+  ],
+  "source_rigidity_issues": [
+    {
+      "segment": "Pelvis-Spine1",
+      "min": 1.0,
+      "max": 1.3,
+      "spread_ratio": 0.231
+    }
+  ],
+  "target_rigidity_issues": [
+    {
+      "segment": "Hips-Spine",
+      "min": 10727.8,
+      "max": 13124.5,
+      "spread_ratio": 0.183
+    },
+    {
+      "segment": "Spine-Spine1",
+      "min": 10716.0,
+      "max": 13114.6,
+      "spread_ratio": 0.183
+    }
+  ]
+}

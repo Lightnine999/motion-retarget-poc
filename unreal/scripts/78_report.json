@@ -1,0 +1,46 @@
+{
+  "bone_related_methods": [
+    "bone_is_child_of",
+    "defer_kinematic_bone_update",
+    "find_closest_bone_k2",
+    "find_constraint_bone_name",
+    "get_bone_index",
+    "get_bone_linear_velocity",
+    "get_bone_mass",
+    "get_bone_name",
+    "get_bone_transform",
+    "get_num_bones",
+    "get_parent_bone",
+    "get_socket_bone_name",
+    "hide_bone_by_name",
+    "is_bone_hidden_by_name",
+    "kinematic_bones_update_type",
+    "match_ref_bone",
+    "per_bone_motion_blur",
+    "transform_from_bone_space",
+    "transform_to_bone_space",
+    "un_hide_bone_by_name"
+  ],
+  "socket_related_methods": [
+    "does_socket_exist",
+    "get_all_socket_names",
+    "get_attach_socket_name",
+    "get_socket_bone_name",
+    "get_socket_location",
+    "get_socket_quaternion",
+    "get_socket_rotation",
+    "get_socket_transform"
+  ],
+  "boneSpaces_members": [
+    "COMPONENT_SPACE",
+    "WORLD_SPACE",
+    "cast",
+    "get_display_name",
+    "name",
+    "static_enum",
+    "value"
+  ],
+  "help_get_bone_transform": "x.get_bone_transform(bone_name, transform_space=RelativeTransformSpace.RTS_WORLD) -> Transform\nGet world-space bone transform.\n\nArgs:\n    bone_name (Name): Name of the the bone to get the transform\n    transform_space (RelativeTransformSpace): \n\nReturns:\n    Transform: Bone transform in world space if bone is found. Otherwise it will return component's transform in world space.",
+  "help_get_socket_transform": "x.get_socket_transform(socket_name, transform_space=RelativeTransformSpace.RTS_WORLD) -> Transform\nGet world-space socket transform.\n\nArgs:\n    socket_name (Name): Name of the socket or the bone to get the transform\n    transform_space (RelativeTransformSpace): \n\nReturns:\n    Transform: Socket transform in world space if socket if found. Otherwise it will return component's transform in world space.",
+  "help_get_socket_location": "x.get_socket_location(socket_name) -> Vector\nGet world-space socket or bone location.\n\nArgs:\n    socket_name (Name): Name of the socket or the bone to get the transform\n\nReturns:\n    Vector: Socket transform in world space if socket is found. Otherwise it will return component's transform in world space."
+}

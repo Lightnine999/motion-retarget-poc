@@ -1,0 +1,21 @@
+{
+  "num_frames": 311,
+  "discontinuities_over_25deg": {
+    "Hips": [],
+    "Spine": [],
+    "Spine1": [],
+    "Spine2": [],
+    "Neck": [],
+    "LeftShoulder": [],
+    "RightShoulder": []
+  },
+  "max_frame_to_frame_angle_deg": {
+    "Hips": 0.0,
+    "Spine": 13.8,
+    "Spine1": 4.9,
+    "Spine2": 5.6,
+    "Neck": 13.1,
+    "LeftShoulder": 7.5,
+    "RightShoulder": 8.2
+  }
+}

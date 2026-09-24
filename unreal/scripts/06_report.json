@@ -1,0 +1,370 @@
+{
+  "source_root": "SMPL_Armature",
+  "target_root": "Hips",
+  "source_tree": [
+    {
+      "name": "SMPL_Armature",
+      "parent": null
+    },
+    {
+      "name": "Pelvis",
+      "parent": "SMPL_Armature"
+    },
+    {
+      "name": "L_Hip",
+      "parent": "Pelvis"
+    },
+    {
+      "name": "L_Knee",
+      "parent": "L_Hip"
+    },
+    {
+      "name": "L_Ankle",
+      "parent": "L_Knee"
+    },
+    {
+      "name": "L_Foot",
+      "parent": "L_Ankle"
+    },
+    {
+      "name": "R_Hip",
+      "parent": "Pelvis"
+    },
+    {
+      "name": "R_Knee",
+      "parent": "R_Hip"
+    },
+    {
+      "name": "R_Ankle",
+      "parent": "R_Knee"
+    },
+    {
+      "name": "R_Foot",
+      "parent": "R_Ankle"
+    },
+    {
+      "name": "Spine1",
+      "parent": "Pelvis"
+    },
+    {
+      "name": "Spine2",
+      "parent": "Spine1"
+    },
+    {
+      "name": "Spine3",
+      "parent": "Spine2"
+    },
+    {
+      "name": "Neck",
+      "parent": "Spine3"
+    },
+    {
+      "name": "Head",
+      "parent": "Neck"
+    },
+    {
+      "name": "L_Collar",
+      "parent": "Spine3"
+    },
+    {
+      "name": "L_Shoulder",
+      "parent": "L_Collar"
+    },
+    {
+      "name": "L_Elbow",
+      "parent": "L_Shoulder"
+    },
+    {
+      "name": "L_Wrist",
+      "parent": "L_Elbow"
+    },
+    {
+      "name": "L_Hand",
+      "parent": "L_Wrist"
+    },
+    {
+      "name": "R_Collar",
+      "parent": "Spine3"
+    },
+    {
+      "name": "R_Shoulder",
+      "parent": "R_Collar"
+    },
+    {
+      "name": "R_Elbow",
+      "parent": "R_Shoulder"
+    },
+    {
+      "name": "R_Wrist",
+      "parent": "R_Elbow"
+    },
+    {
+      "name": "R_Hand",
+      "parent": "R_Wrist"
+    }
+  ],
+  "target_tree": [
+    {
+      "name": "Hips",
+      "parent": null
+    },
+    {
+      "name": "Spine",
+      "parent": "Hips"
+    },
+    {
+      "name": "Spine1",
+      "parent": "Spine"
+    },
+    {
+      "name": "Spine2",
+      "parent": "Spine1"
+    },
+    {
+      "name": "Neck",
+      "parent": "Spine2"
+    },
+    {
+      "name": "Head",
+      "parent": "Neck"
+    },
+    {
+      "name": "HeadTop_End",
+      "parent": "Head"
+    },
+    {
+      "name": "LeftShoulder",
+      "parent": "Spine2"
+    },
+    {
+      "name": "LeftArm",
+      "parent": "LeftShoulder"
+    },
+    {
+      "name": "LeftForeArm",
+      "parent": "LeftArm"
+    },
+    {
+      "name": "LeftHand",
+      "parent": "LeftForeArm"
+    },
+    {
+      "name": "LeftHandThumb1",
+      "parent": "LeftHand"
+    },
+    {
+      "name": "LeftHandThumb2",
+      "parent": "LeftHandThumb1"
+    },
+    {
+      "name": "LeftHandThumb3",
+      "parent": "LeftHandThumb2"
+    },
+    {
+      "name": "LeftHandThumb4",
+      "parent": "LeftHandThumb3"
+    },
+    {
+      "name": "LeftHandIndex1",
+      "parent": "LeftHand"
+    },
+    {
+      "name": "LeftHandIndex2",
+      "parent": "LeftHandIndex1"
+    },
+    {
+      "name": "LeftHandIndex3",
+      "parent": "LeftHandIndex2"
+    },
+    {
+      "name": "LeftHandIndex4",
+      "parent": "LeftHandIndex3"
+    },
+    {
+      "name": "LeftHandMiddle1",
+      "parent": "LeftHand"
+    },
+    {
+      "name": "LeftHandMiddle2",
+      "parent": "LeftHandMiddle1"
+    },
+    {
+      "name": "LeftHandMiddle3",
+      "parent": "LeftHandMiddle2"
+    },
+    {
+      "name": "LeftHandMiddle4",
+      "parent": "LeftHandMiddle3"
+    },
+    {
+      "name": "LeftHandRing1",
+      "parent": "LeftHand"
+    },
+    {
+      "name": "LeftHandRing2",
+      "parent": "LeftHandRing1"
+    },
+    {
+      "name": "LeftHandRing3",
+      "parent": "LeftHandRing2"
+    },
+    {
+      "name": "LeftHandRing4",
+      "parent": "LeftHandRing3"
+    },
+    {
+      "name": "LeftHandPinky1",
+      "parent": "LeftHand"
+    },
+    {
+      "name": "LeftHandPinky2",
+      "parent": "LeftHandPinky1"
+    },
+    {
+      "name": "LeftHandPinky3",
+      "parent": "LeftHandPinky2"
+    },
+    {
+      "name": "LeftHandPinky4",
+      "parent": "LeftHandPinky3"
+    },
+    {
+      "name": "RightShoulder",
+      "parent": "Spine2"
+    },
+    {
+      "name": "RightArm",
+      "parent": "RightShoulder"
+    },
+    {
+      "name": "RightForeArm",
+      "parent": "RightArm"
+    },
+    {
+      "name": "RightHand",
+      "parent": "RightForeArm"
+    },
+    {
+      "name": "RightHandThumb1",
+      "parent": "RightHand"
+    },
+    {
+      "name": "RightHandThumb2",
+      "parent": "RightHandThumb1"
+    },
+    {
+      "name": "RightHandThumb3",
+      "parent": "RightHandThumb2"
+    },
+    {
+      "name": "RightHandThumb4",
+      "parent": "RightHandThumb3"
+    },
+    {
+      "name": "RightHandIndex1",
+      "parent": "RightHand"
+    },
+    {
+      "name": "RightHandIndex2",
+      "parent": "RightHandIndex1"
+    },
+    {
+      "name": "RightHandIndex3",
+      "parent": "RightHandIndex2"
+    },
+    {
+      "name": "RightHandIndex4",
+      "parent": "RightHandIndex3"
+    },
+    {
+      "name": "RightHandMiddle1",
+      "parent": "RightHand"
+    },
+    {
+      "name": "RightHandMiddle2",
+      "parent": "RightHandMiddle1"
+    },
+    {
+      "name": "RightHandMiddle3",
+      "parent": "RightHandMiddle2"
+    },
+    {
+      "name": "RightHandMiddle4",
+      "parent": "RightHandMiddle3"
+    },
+    {
+      "name": "RightHandRing1",
+      "parent": "RightHand"
+    },
+    {
+      "name": "RightHandRing2",
+      "parent": "RightHandRing1"
+    },
+    {
+      "name": "RightHandRing3",
+      "parent": "RightHandRing2"
+    },
+    {
+      "name": "RightHandRing4",
+      "parent": "RightHandRing3"
+    },
+    {
+      "name": "RightHandPinky1",
+      "parent": "RightHand"
+    },
+    {
+      "name": "RightHandPinky2",
+      "parent": "RightHandPinky1"
+    },
+    {
+      "name": "RightHandPinky3",
+      "parent": "RightHandPinky2"
+    },
+    {
+      "name": "RightHandPinky4",
+      "parent": "RightHandPinky3"
+    },
+    {
+      "name": "LeftUpLeg",
+      "parent": "Hips"
+    },
+    {
+      "name": "LeftLeg",
+      "parent": "LeftUpLeg"
+    },
+    {
+      "name": "LeftFoot",
+      "parent": "LeftLeg"
+    },
+    {
+      "name": "LeftToeBase",
+      "parent": "LeftFoot"
+    },
+    {
+      "name": "LeftToe_End",
+      "parent": "LeftToeBase"
+    },
+    {
+      "name": "RightUpLeg",
+      "parent": "Hips"
+    },
+    {
+      "name": "RightLeg",
+      "parent": "RightUpLeg"
+    },
+    {
+      "name": "RightFoot",
+      "parent": "RightLeg"
+    },
+    {
+      "name": "RightToeBase",
+      "parent": "RightFoot"
+    },
+    {
+      "name": "RightToe_End",
+      "parent": "RightToeBase"
+    }
+  ],
+  "source_bone_count": 25,
+  "target_bone_count": 65
+}

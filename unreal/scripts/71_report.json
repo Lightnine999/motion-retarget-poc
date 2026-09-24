@@ -1,0 +1,121 @@
+{
+  "frame_0": {
+    "frame": 0,
+    "segment_lengths_cm": {
+      "Hips-Spine": 113.4,
+      "Spine-Spine1": 2.1,
+      "Spine1-Spine2": 1.7,
+      "Spine2-Neck": 1.7,
+      "Neck-Head": 7.7,
+      "Head-HeadTop_End": 14.4
+    },
+    "hips_to_head_z_diff": -109.3,
+    "hips_z": 111.5,
+    "head_z": 2.3,
+    "LeftShoulder_to_RightShoulder_dist": 14.2,
+    "LeftHand_to_RightHand_dist": 0.0,
+    "LeftFoot_to_RightFoot_dist": 0.0
+  },
+  "frame_7": {
+    "frame": 7,
+    "segment_lengths_cm": {
+      "Hips-Spine": 114.0,
+      "Spine-Spine1": 2.1,
+      "Spine1-Spine2": 1.7,
+      "Spine2-Neck": 1.7,
+      "Neck-Head": 7.7,
+      "Head-HeadTop_End": 14.4
+    },
+    "hips_to_head_z_diff": -110.2,
+    "hips_z": 112.5,
+    "head_z": 2.3,
+    "LeftShoulder_to_RightShoulder_dist": 14.2,
+    "LeftHand_to_RightHand_dist": 0.0,
+    "LeftFoot_to_RightFoot_dist": 0.0
+  },
+  "frame_59": {
+    "frame": 59,
+    "segment_lengths_cm": {
+      "Hips-Spine": 133.9,
+      "Spine-Spine1": 2.1,
+      "Spine1-Spine2": 1.7,
+      "Spine2-Neck": 1.7,
+      "Neck-Head": 7.7,
+      "Head-HeadTop_End": 14.4
+    },
+    "hips_to_head_z_diff": -111.4,
+    "hips_z": 113.6,
+    "head_z": 2.3,
+    "LeftShoulder_to_RightShoulder_dist": 14.2,
+    "LeftHand_to_RightHand_dist": 0.0,
+    "LeftFoot_to_RightFoot_dist": 0.0
+  },
+  "frame_88": {
+    "frame": 88,
+    "segment_lengths_cm": {
+      "Hips-Spine": 131.0,
+      "Spine-Spine1": 2.1,
+      "Spine1-Spine2": 1.7,
+      "Spine2-Neck": 1.7,
+      "Neck-Head": 7.7,
+      "Head-HeadTop_End": 14.4
+    },
+    "hips_to_head_z_diff": -112.3,
+    "hips_z": 114.6,
+    "head_z": 2.3,
+    "LeftShoulder_to_RightShoulder_dist": 14.2,
+    "LeftHand_to_RightHand_dist": 0.0,
+    "LeftFoot_to_RightFoot_dist": 0.0
+  },
+  "frame_150": {
+    "frame": 150,
+    "segment_lengths_cm": {
+      "Hips-Spine": 121.2,
+      "Spine-Spine1": 2.1,
+      "Spine1-Spine2": 1.7,
+      "Spine2-Neck": 1.7,
+      "Neck-Head": 7.7,
+      "Head-HeadTop_End": 14.4
+    },
+    "hips_to_head_z_diff": -116.8,
+    "hips_z": 119.1,
+    "head_z": 2.3,
+    "LeftShoulder_to_RightShoulder_dist": 14.2,
+    "LeftHand_to_RightHand_dist": 0.0,
+    "LeftFoot_to_RightFoot_dist": 0.0
+  },
+  "frame_230": {
+    "frame": 230,
+    "segment_lengths_cm": {
+      "Hips-Spine": 118.2,
+      "Spine-Spine1": 2.1,
+      "Spine1-Spine2": 1.7,
+      "Spine2-Neck": 1.7,
+      "Neck-Head": 7.7,
+      "Head-HeadTop_End": 14.4
+    },
+    "hips_to_head_z_diff": -111.1,
+    "hips_z": 113.4,
+    "head_z": 2.3,
+    "LeftShoulder_to_RightShoulder_dist": 14.2,
+    "LeftHand_to_RightHand_dist": 0.0,
+    "LeftFoot_to_RightFoot_dist": 0.0
+  },
+  "frame_310": {
+    "frame": 310,
+    "segment_lengths_cm": {
+      "Hips-Spine": 128.5,
+      "Spine-Spine1": 2.1,
+      "Spine1-Spine2": 1.7,
+      "Spine2-Neck": 1.7,
+      "Neck-Head": 7.7,
+      "Head-HeadTop_End": 14.4
+    },
+    "hips_to_head_z_diff": -123.2,
+    "hips_z": 125.4,
+    "head_z": 2.3,
+    "LeftShoulder_to_RightShoulder_dist": 14.2,
+    "LeftHand_to_RightHand_dist": 0.0,
+    "LeftFoot_to_RightFoot_dist": 0.0
+  }
+}

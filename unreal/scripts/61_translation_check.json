@@ -1,0 +1,156 @@
+{
+  "top_position_outliers": [
+    {
+      "bone": "Hips",
+      "max_pos_len": 138.52811263324185,
+      "at_frame": 236
+    },
+    {
+      "bone": "LeftLeg",
+      "max_pos_len": 40.63853073120117,
+      "at_frame": 0
+    },
+    {
+      "bone": "RightLeg",
+      "max_pos_len": 40.62049102783203,
+      "at_frame": 0
+    },
+    {
+      "bone": "RightFoot",
+      "max_pos_len": 37.79456329345703,
+      "at_frame": 0
+    },
+    {
+      "bone": "LeftFoot",
+      "max_pos_len": 37.793060302734375,
+      "at_frame": 0
+    },
+    {
+      "bone": "LeftForeArm",
+      "max_pos_len": 26.107450485229492,
+      "at_frame": 0
+    },
+    {
+      "bone": "RightForeArm",
+      "max_pos_len": 26.105331420898438,
+      "at_frame": 0
+    },
+    {
+      "bone": "HeadTop_End",
+      "max_pos_len": 22.50621640594954,
+      "at_frame": 0
+    },
+    {
+      "bone": "RightHand",
+      "max_pos_len": 21.123506546020508,
+      "at_frame": 0
+    },
+    {
+      "bone": "LeftHand",
+      "max_pos_len": 21.12257194519043,
+      "at_frame": 0
+    },
+    {
+      "bone": "RightToeBase",
+      "max_pos_len": 17.847446441650398,
+      "at_frame": 0
+    },
+    {
+      "bone": "LeftToeBase",
+      "max_pos_len": 17.46475601196289,
+      "at_frame": 0
+    },
+    {
+      "bone": "RightShoulder",
+      "max_pos_len": 15.526039350705327,
+      "at_frame": 0
+    },
+    {
+      "bone": "LeftShoulder",
+      "max_pos_len": 15.523785850589155,
+      "at_frame": 0
+    },
+    {
+      "bone": "Neck",
+      "max_pos_len": 15.190250396728574,
+      "at_frame": 0
+    }
+  ],
+  "top_scale_outliers": [
+    {
+      "bone": "RightHandThumb1",
+      "max_scale_dev": 6.661338147750939e-16,
+      "at_frame": 0
+    },
+    {
+      "bone": "RightHandIndex1",
+      "max_scale_dev": 6.661338147750939e-16,
+      "at_frame": 0
+    },
+    {
+      "bone": "RightHandRing1",
+      "max_scale_dev": 6.661338147750939e-16,
+      "at_frame": 0
+    },
+    {
+      "bone": "RightHandPinky1",
+      "max_scale_dev": 6.661338147750939e-16,
+      "at_frame": 0
+    },
+    {
+      "bone": "RightHandRing2",
+      "max_scale_dev": 5.551115123125783e-16,
+      "at_frame": 0
+    },
+    {
+      "bone": "LeftToe_End",
+      "max_scale_dev": 5.551115123125783e-16,
+      "at_frame": 0
+    },
+    {
+      "bone": "LeftHandThumb1",
+      "max_scale_dev": 4.440892098500626e-16,
+      "at_frame": 0
+    },
+    {
+      "bone": "LeftHandIndex2",
+      "max_scale_dev": 4.440892098500626e-16,
+      "at_frame": 0
+    },
+    {
+      "bone": "LeftHandRing4",
+      "max_scale_dev": 4.440892098500626e-16,
+      "at_frame": 0
+    },
+    {
+      "bone": "LeftHandPinky3",
+      "max_scale_dev": 4.440892098500626e-16,
+      "at_frame": 0
+    },
+    {
+      "bone": "RightHandIndex2",
+      "max_scale_dev": 4.440892098500626e-16,
+      "at_frame": 0
+    },
+    {
+      "bone": "RightHandIndex3",
+      "max_scale_dev": 4.440892098500626e-16,
+      "at_frame": 0
+    },
+    {
+      "bone": "RightHandMiddle1",
+      "max_scale_dev": 4.440892098500626e-16,
+      "at_frame": 0
+    },
+    {
+      "bone": "RightHandMiddle3",
+      "max_scale_dev": 4.440892098500626e-16,
+      "at_frame": 0
+    },
+    {
+      "bone": "RightHandPinky2",
+      "max_scale_dev": 4.440892098500626e-16,
+      "at_frame": 0
+    }
+  ]
+}

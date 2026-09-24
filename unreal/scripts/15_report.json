@@ -1,0 +1,19 @@
+{
+  "retargeted_seq_length": 10.366666793823242,
+  "source_seq_length": 10.366666793823242,
+  "retargeted_num_frames_prop": 311,
+  "retargeted_num_frames_lib": 311,
+  "retargeted_target_skeleton": "Mixamo_Character_Skeleton",
+  "pose_Neck_t0": {
+    "translation": "<Struct 'Vector' (0x3a99caea0) {x: 0.000000, y: -15.190250, z: 0.000001}>",
+    "rotation": "<Struct 'Quat' (0x3a99cae80) {x: 0.092222, y: -0.972833, z: -0.125114, w: 0.171576}>"
+  },
+  "pose_LeftArm_t0": {
+    "translation": "<Struct 'Vector' (0x3a99cae10) {x: 0.000000, y: -14.595930, z: 0.000000}>",
+    "rotation": "<Struct 'Quat' (0x3a99cadf0) {x: 0.041058, y: 0.555522, z: -0.807842, w: 0.192617}>"
+  },
+  "pose_Hips_t0": {
+    "translation": "<Struct 'Vector' (0x3a99caf30) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+    "rotation": "<Struct 'Quat' (0x3a99caf10) {x: -0.707107, y: -0.000000, z: 0.000000, w: 0.707107}>"
+  }
+}

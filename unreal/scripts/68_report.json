@@ -1,0 +1,104 @@
+{
+  "frame0_Hips": {
+    "quat": [
+      -0.203,
+      -0.799,
+      0.276,
+      -0.494
+    ]
+  },
+  "frame0_Spine": {
+    "quat": [
+      -0.899,
+      0.336,
+      -0.256,
+      0.117
+    ]
+  },
+  "frame0_Spine1": {
+    "quat": [
+      0.059,
+      0.011,
+      -0.048,
+      0.997
+    ]
+  },
+  "frame0_Spine2": {
+    "quat": [
+      0.187,
+      0.026,
+      -0.044,
+      0.981
+    ]
+  },
+  "frame0_LeftShoulder": {
+    "quat": [
+      -0.57,
+      0.516,
+      0.371,
+      0.522
+    ]
+  },
+  "frame0_RightShoulder": {
+    "quat": [
+      -0.581,
+      -0.483,
+      -0.45,
+      0.477
+    ]
+  },
+  "ref_Hips": {
+    "quat": [
+      -0.707,
+      0.0,
+      0.0,
+      0.707
+    ]
+  },
+  "ref_Spine": {
+    "quat": [
+      0.668,
+      0.0,
+      0.0,
+      -0.744
+    ]
+  },
+  "ref_Spine1": {
+    "quat": [
+      -0.668,
+      -0.0,
+      0.0,
+      0.744
+    ]
+  },
+  "ref_Spine2": {
+    "quat": [
+      0.668,
+      0.0,
+      0.0,
+      -0.744
+    ]
+  },
+  "ref_LeftShoulder": {
+    "quat": [
+      0.7,
+      -0.706,
+      -0.105,
+      0.028
+    ]
+  },
+  "ref_RightShoulder": {
+    "quat": [
+      -0.699,
+      -0.707,
+      -0.105,
+      -0.028
+    ]
+  },
+  "diff_from_ref_Hips": 156.2,
+  "diff_from_ref_Spine": 93.2,
+  "diff_from_ref_Spine1": 90.7,
+  "diff_from_ref_Spine2": 105.5,
+  "diff_from_ref_LeftShoulder": 76.2,
+  "diff_from_ref_RightShoulder": 77.3
+}

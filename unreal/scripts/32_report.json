@@ -1,0 +1,42 @@
+{
+  "help_get_ref_pose_transform_of_bone": "x.get_ref_pose_transform_of_bone(bone_name) -> Transform\nGet the global-space retarget pose transform of the given Bone.\n\nArgs:\n    bone_name (Name): \n\nReturns:\n    Transform:",
+  "sample_hips": {
+    "q": [
+      -0.7071067811518649,
+      0.0,
+      0.0,
+      0.707106781151865
+    ],
+    "p": [
+      0.0,
+      2.499687910079956,
+      96.05529774278364
+    ]
+  },
+  "sample_leftupleg": {
+    "q": [
+      -0.03615775506420223,
+      0.7355969283669488,
+      0.6756380960844043,
+      0.03321052015662903
+    ],
+    "p": [
+      8.711987495422363,
+      2.402183056435227,
+      90.46924580240407
+    ]
+  },
+  "sample_spine": {
+    "q": [
+      0.6679451807529251,
+      0.0,
+      0.0,
+      -0.7442104778305313
+    ],
+    "p": [
+      0.0,
+      1.4090434304013968,
+      106.12322987059527
+    ]
+  }
+}

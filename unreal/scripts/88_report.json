@@ -1,0 +1,17 @@
+{
+  "/Game/Source/SMPL_Source_Anim": {
+    "enable_root_motion": "False",
+    "root_motion_root_lock": "<RootMotionRootLock.REF_POSE: 0>",
+    "force_root_lock": "False"
+  },
+  "/Game/Retarget/Animations/SMPL_Source_Anim_OnMixamo_FK": {
+    "enable_root_motion": "False",
+    "root_motion_root_lock": "<RootMotionRootLock.REF_POSE: 0>",
+    "force_root_lock": "False"
+  },
+  "/Game/Retarget/Animations/SMPL_Source_Anim_OnMixamo_FK_PelvisFix": {
+    "enable_root_motion": "False",
+    "root_motion_root_lock": "<RootMotionRootLock.REF_POSE: 0>",
+    "force_root_lock": "False"
+  }
+}

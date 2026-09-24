@@ -1,0 +1,26 @@
+{
+  "num_frames": 311,
+  "num_tracks": 65,
+  "per_track_sample": {
+    "hips": {
+      "rot_len": 0,
+      "max_delta": null
+    },
+    "spine": {
+      "rot_len": 0,
+      "max_delta": null
+    },
+    "spine1": {
+      "rot_len": 0,
+      "max_delta": null
+    },
+    "spine2": {
+      "rot_len": 0,
+      "max_delta": null
+    },
+    "neck": {
+      "rot_len": 0,
+      "max_delta": null
+    }
+  }
+}

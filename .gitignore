@@ -9,3 +9,11 @@ __pycache__/
 tmp_addons/
 tmp_framecmp/
 .omc/
+
+# Unreal Engine 프로젝트 - 재생성 가능한 빌드/캐시 산출물
+unreal/MotionRetarget/Intermediate/
+unreal/MotionRetarget/Saved/
+unreal/MotionRetarget/DerivedDataCache/
+unreal/MotionRetarget/Binaries/
+unreal/scripts/*.log
+unreal/renders/

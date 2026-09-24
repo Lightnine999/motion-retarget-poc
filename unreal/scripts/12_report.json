@@ -1,0 +1,13 @@
+{
+  "anim_asset_data_valid": true,
+  "result_paths": [
+    {
+      "str": "<Struct 'AssetData' (0x44f50abac00) {package_name: \"/Game/Retarget/Animations/SMPL_Source_Anim_OnMixamo\", package_path: \"/Game/Retarget/Animations\", asset_name: \"SMPL_Source_Anim_OnMixamo\", asset_class_path: {package_name: \"/Script/Engine\", asset_name: \"AnimSequence\"}}>",
+      "package_name": "/Game/Retarget/Animations/SMPL_Source_Anim_OnMixamo",
+      "asset_name": "SMPL_Source_Anim_OnMixamo",
+      "package_path": "/Game/Retarget/Animations",
+      "saved": true
+    }
+  ],
+  "result_count": 1
+}

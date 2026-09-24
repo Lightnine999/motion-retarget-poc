@@ -8,19 +8,30 @@
 
 ## 무엇을 증명했나 (기술 POC 결론)
 
-**"영상 → 3D 모션 추정 → 전혀 다른 3D 캐릭터로 리타겟팅"이 GUI 조작 없이 완전히 스크립트로 가능하다는 걸 end-to-end로 증명했다.** GPU 무료 티어(Kaggle)만으로 모션 추정을, 무료 오픈소스 도구(Blender·Motius·Rokoko)만으로 리타겟팅을 끝까지 자동화했고, 그 과정에서 만난 문제들(접지 실패, 팔다리 방향 오류, 150°+ 짐벌락)의 근본 원인을 라이브러리 코드 수준까지 파고들어 규명·수정했다. 잔여 떨림(19~60°)을 더 다듬는 마무리 품질 작업은 미완이지만, **"이 기술이 되는가"라는 POC의 핵심 질문에는 그렇다고 답할 수 있는 단계**다.
+**"영상 → 3D 모션 추정 → 전혀 다른 3D 캐릭터로 리타겟팅"이 GUI 조작 없이 완전히 스크립트로, 떨림 없는 매끄러운 품질로 end-to-end 가능하다는 걸 증명했다.** GPU 무료 티어(Kaggle)만으로 모션 추정을, 무료 오픈소스 도구(Blender)만으로 리타겟팅을 끝까지 자동화했다. 그 과정에서 만난 문제들(접지 실패, 팔다리 방향 오류, 150°+ 짐벌락, 그리고 마지막까지 남았던 19~60° 잔여 떨림)의 근본 원인을 전부 라이브러리/엔진 코드 수준까지 파고들어 규명·수정했다 — 마지막 잔여 떨림은 후처리로 다듬는 대신 **1단계(SMPL→FBX 변환)를 스무딩 없이 처음부터 직접 재구현**해서 근본적으로 없앴다([RETARGETING_JITTER_INVESTIGATION.md §7](RETARGETING_JITTER_INVESTIGATION.md#7-4차-문제--잔여-떨림을-다듬기가-아니라-처음부터-다시-만들기로-해결-2026-09-24)). **"이 기술이 되는가"라는 POC의 핵심 질문에 그렇다고 답할 수 있는 최종 단계**다.
 
-## 파이프라인 (진행한 순서대로)
+## 파이프라인 — 따라하기 (지금 기준 가장 깨끗한 경로)
 
 ```
 영상(테니스 스윙, 10.4초/312프레임)
-  ① GVHMR(Kaggle GPU)          → SMPL 3D 모션 파라미터 (hmr4d_results.pt)
-  ② Motius                     → 순정 SMPL 스켈레톤 FBX (검증용, 크로스리그 수학 없음)
-  ③ Motius → Mixamo 캐릭터     → 1차 리타겟팅 (접지/방향 문제 발견·수정)
-  ④ Blender + Rokoko(무료 애드온) → 2차 리타겟팅 경로 (Blender 5.x 버그 수정)
-  ⑤ 근본 원인 규명 & 패치       → FBX 짐벌락 해결 (라이브러리 코드 패치)
-  ⑥ Blender 헤드리스 렌더       → 결과 mp4/GIF
+  ① GVHMR(Kaggle GPU 무료)          → SMPL 3D 모션 파라미터 (hmr4d_results.pt)
+  ② compute_smpl_fk.py (스무딩 없는 순수 FK)  → global_mat/transl npz 3종
+  ③ export_smpl_source.py (최초 1회) → 레스트 스켈레톤용 SMPL FBX
+  ④ rebuild_smpl_fbx_fk.py (Blender) → 순정 SMPL FBX (떨림 없음, 스크린샷 검증)
+  ⑤ retarget_onto_mixamo_blender.py (Blender) → Mixamo 캐릭터 FBX (최종 리타겟)
+  ⑥ render_stills_fk_retarget.py + ffmpeg → 원본과 나란히 비교한 mp4
 ```
+
+| # | 스크립트 | 실행 환경 | 결과물 |
+|---|---|---|---|
+| ① | [kaggle/gvhmr_inference_kaggle.ipynb](kaggle/gvhmr_inference_kaggle.ipynb) | Kaggle GPU | `hmr4d_results.pt` |
+| ② | [scripts/compute_smpl_fk.py](scripts/compute_smpl_fk.py) | conda `gvhmr`(torch+scipy) | `smpl_params_fk*.npz` |
+| ③ | [scripts/export_smpl_source.py](scripts/export_smpl_source.py) | conda `gvhmr`(Motius, 최초 1회) | `smpl_source_clean.fbx` |
+| ④ | [scripts/rebuild_smpl_fbx_fk.py](scripts/rebuild_smpl_fbx_fk.py) | `blender --background --python` | `smpl_source_fk.fbx` |
+| ⑤ | [scripts/retarget_onto_mixamo_blender.py](scripts/retarget_onto_mixamo_blender.py) | `blender --background --python` | `mixamo_character_fk_retarget.fbx` |
+| ⑥ | [scripts/render_stills_fk_retarget.py](scripts/render_stills_fk_retarget.py) + `ffmpeg` | `blender --background --python` + 셸 | `side_by_side_fk_retarget.mp4` |
+
+각 단계의 정확한 입출력 파일명, 놓치기 쉬운 함정(rest_basis 합성, Y-up/Z-up 축, Blender `view_layer.update()` 등)은 [TECH_SPEC.md §2.9](TECH_SPEC.md#29-리타겟팅-최종-파이프라인--재현-가이드-2026-09-24)에 표로 정리해뒀다. 실패로 끝난 경로(Rokoko 디스파이크 후처리, Unreal IK Retargeter)까지 포함한 전체 시행착오 기록은 [RETARGETING_JITTER_INVESTIGATION.md](RETARGETING_JITTER_INVESTIGATION.md) 참고.
 
 ### ① 영상 → 3D 모션 추정 (GVHMR)
 
@@ -74,7 +85,23 @@ FBX 바이너리를 직접 열어(`strings`) 확인한 결과, **FBX 포맷은 �
 ### ⑥ 검증 도구 & 남은 과제
 
 - 이번 과정에서 만든 재사용 가능한 검증 스크립트들: SMPL 순방향 기구학을 Blender 독립적으로 재현하는 numpy 기준값 계산기, 본별 프레임 간 지오데식 회전 변화 측정기, 이상치 프레임을 SLERP로 보간하는 디스파이크 알고리즘(`scripts/` 45개 스크립트 전부 보존).
-- **남은 과제**: 150°+ 극단적 스파이크는 해결됐지만, 19~60° 수준의 잔여 떨림을 후처리로 더 낮추려는 시도는 매번 자체 export 단계에서 같은 클래스의 문제를 재도입해 실패 — 원인 미특정 상태로 보류. 다음 시도는 Unreal Engine IK Retargeter(Full Body IK 기반, 발 고정·다리 길이 보정 전용 기능 보유)로 리타겟팅 구간 자체를 교체하는 방향.
+- **당시 남은 과제였던 것**: 150°+ 극단적 스파이크는 해결됐지만, 19~60° 수준의 잔여 떨림을 후처리로 더 낮추려는 시도는 매번 자체 export 단계에서 같은 클래스의 문제를 재도입해 실패 — 원인 미특정 상태로 보류했었다. **§⑦에서 후처리가 아니라 근본 재구현으로 완전히 해결됨.**
+
+### ⑦ 잔여 떨림을 근본적으로 없애기 — 1단계 처음부터 재구현 (2026-09-24)
+
+§⑥의 디스파이크(후처리) 경로가 막힌 뒤 실제로 Blender에서 `smpl_source_clean.fbx`를 열어 F-curve 그래프를 직접 봤더니, 1단계(SMPL→FBX 변환) 자체가 여전히 한 프레임 만에 급격히 튀는 게 눈으로 보였다. 그래서 후처리로 다듬는 대신 **Motius의 스무딩을 아예 거치지 않고 1단계를 순수 forward-kinematics로 처음부터 다시 구현**했다.
+
+과정에서 겉보기엔 똑같이 "캐릭터가 실타래처럼 붕괴"하는 증상을 내는 **서로 다른 원인 세 개**를 하나씩 분리해냈다:
+
+1. **rest_basis 합성 누락** — SMPL의 관절 회전을 Blender 본의 레스트 방향과 합성하지 않고 그냥 대입 → 캐릭터가 튜브 모양으로 붕괴.
+2. **SMPL(Y-up)과 Blender(Z-up) 좌표축 불일치** — `transl`(골반 이동값)의 분포를 찍어보고 발견, 좌표 변환 추가.
+3. **Blender 의존성 그래프 미갱신** (가장 찾기 어려웠던 원인) — `pose_bone.matrix = 절대행렬`을 부모→자식 순서로 연속 호출할 때, Blender가 호출 사이에 내부 상태를 자동으로 갱신해주지 않아 자식 본이 "갱신되기 전" 부모 상태를 참조. 회전을 아예 0(Identity)으로 놓는 대조 실험으로 좌표축 문제와 분리해냈고, 매 본 설정 직후 `bpy.context.view_layer.update()`를 호출하는 것으로 해결.
+
+이렇게 재구현한 순정 SMPL 모션을 실제 Mixamo 캐릭터 메쉬(후드·바지·신발·머리카락까지 스키닝된 실제 자산)에 Blender 안에서 직접 리타겟팅했다(SMPL 22관절과 Mixamo 대응 본이 부모-자식 구조까지 1:1로 일치한다는 걸 먼저 확인). 여기서도 Mixamo 리그 오브젝트에 걸린 자체 보정(90°회전+스케일)을 좌표계 변환으로 오인해 두 번 더 삽질했지만(§⑦ 상세는 investigation 문서 참고), 최종적으로 **정면·측면 전 구간에서 해부학적으로 정상인 인체 형태, 원본 스윙 동작을 그대로 따라가는** 결과를 얻었다.
+
+같은 재구축 데이터를 Unreal Engine IK Retargeter에도 연결해봤으나 예전과 같은 "허리 뒤틀림" 증상이 재현됐다. **"블렌더-언리얼 축이 다른 것 아니냐"는 가설을 세우고 실측으로 검증했으나, 위치·회전 변환 모두 언리얼 임포트까지 밀리미터 오차 이내로 완벽히 일치해 이 가설은 반박됐다.** 실제 원인은 리타겟된 Hips(골반) 본의 회전이 전 프레임 0.0도로 고정되는 것(리타겟터의 "Pelvis Motion"/"Root Motion" op 쪽 문제로 추정) — 이건 아직 미해결이며 §다음 과제 참고.
+
+전체 시행착오와 실측 수치는 [RETARGETING_JITTER_INVESTIGATION.md §7](RETARGETING_JITTER_INVESTIGATION.md#7-4차-문제--잔여-떨림을-다듬기가-아니라-처음부터-다시-만들기로-해결-2026-09-24)에 원인별로 표까지 정리해뒀다.
 
 ## 결과 비교 영상
 
@@ -90,7 +117,13 @@ FBX 바이너리를 직접 열어(`strings`) 확인한 결과, **FBX 포맷은 �
 
 원본 화질(mp4): [media/mixamo_final_comparison.mp4](media/mixamo_final_comparison.mp4)
 
-①은 모션 추정 자체가 얼마나 정확한지, ②는 캐릭터 리타겟팅까지 거친 뒤 남은 차이(§⑥ 참고)를 눈으로 비교하기 위한 자료.
+**③ (최신, 2026-09-24) 잔여 떨림까지 완전히 없앤 최종본** — §⑦ 1단계 처음부터 재구현 + Mixamo 캐릭터 직접 리타겟 결과. 지금 시점에서 이 프로젝트의 가장 매끄러운 결과물:
+
+![Mixamo FK 재구현 최종 결과 비교](media/mixamo_fk_clean_comparison.gif)
+
+원본 화질(mp4): [media/mixamo_fk_clean_comparison.mp4](media/mixamo_fk_clean_comparison.mp4)
+
+①은 모션 추정 자체가 얼마나 정확한지, ②는 초기 리타겟팅 결과(§⑥ 시점, 잔여 떨림 있음), ③은 그 잔여 떨림까지 근본적으로 없앤 최종본을 눈으로 비교하기 위한 자료.
 
 ## 셋업 (최초 1회, 사용자당)
 
@@ -100,8 +133,12 @@ FBX 바이너리를 직접 열어(`strings`) 확인한 결과, **FBX 포맷은 �
 
 ## 결과물 요약
 
-- **핵심 기술 1 (오픈소스 3D 리타겟팅): end-to-end 동작 확인.** 영상(테니스 스윙) → GVHMR 3D 모션 추정(312프레임) → Mixamo 캐릭터로 리타겟팅(§①~⑤) → Blender 헤드리스 렌더로 결과 확인. GUI 없이 전 과정 스크립트로 실행됨. 품질(잔여 떨림) 마무리는 미완 — §⑥.
+- **핵심 기술 1 (오픈소스 3D 리타겟팅): end-to-end 완전 동작 확인.** 영상(테니스 스윙) → GVHMR 3D 모션 추정(312프레임) → 스무딩 없는 순수 FK로 1단계 재구현(§⑦) → Mixamo 캐릭터로 직접 리타겟팅 → Blender 헤드리스 렌더로 결과 확인. GUI 없이 전 과정 스크립트로 실행됨. 접지 실패·팔다리 방향 오류·150°+ 짐벌락·19~60° 잔여 떨림까지 파이프라인에서 만난 모든 품질 문제를 근본 원인까지 규명해 해결했다.
 - 핵심 기술 2 (상용 AI 영상 서비스 비교): _TBD_
+
+## 다음 과제
+
+- **Unreal Engine IK Retargeter의 Hips(골반) 회전 미전달 문제** — 같은 클린 데이터를 Unreal로 가져가 리타겟팅하면 골반 회전이 전 프레임 0.0도로 고정되는 문제가 남아있다("허리 뒤틀림"으로 보임). 축 정렬 자체는 이미 실측으로 검증 완료했으므로, 다음은 리타겟터의 Pelvis Motion op 내부 회전 계산 경로와 Retarget Pose 정렬 상태를 조사해야 한다. 상세: [RETARGETING_JITTER_INVESTIGATION.md §7.6~7.8](RETARGETING_JITTER_INVESTIGATION.md#76-언리얼-재도전--같은-허리-뒤틀림-재현).
 
 ## 알게 된 것 (셋업 과정의 함정들)
 

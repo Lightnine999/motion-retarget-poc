@@ -1,0 +1,57 @@
+{
+  "pelvis_settings_class": "<class 'IKRetargetPelvisMotionOpSettings'>",
+  "pelvis_settings_props": {
+    "affect_ik_horizontal": "1.0",
+    "affect_ik_vertical": "0.0",
+    "blend_to_absolute_offset": "<Struct 'Vector' (0x91ef2023db0) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+    "blend_to_source_translation": "0.0",
+    "blend_to_source_translation_weights": "<Struct 'Vector' (0x91ef2023e68) {x: 1.000000, y: 1.000000, z: 1.000000}>",
+    "debug_draw_size": "5.0",
+    "debug_draw_thickness": "5.0",
+    "enabled": "True",
+    "floor_constraint_weight": "0.0",
+    "ground_falloff_height_percent": "0.8999999761581421",
+    "lod_threshold": "-1",
+    "rotation_alpha": "1.0",
+    "rotation_offset_global": "<Struct 'Rotator' (0x91ef2023e10) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+    "rotation_offset_local": "<Struct 'Rotator' (0x91ef2023df8) {pitch: 0.000000, yaw: 0.000000, roll: 0.000000}>",
+    "scale_horizontal": "1.0",
+    "scale_vertical": "1.0",
+    "source_crotch_offset": "0.0",
+    "target_crotch_offset": "0.0",
+    "translation_alpha": "1.0",
+    "translation_offset_global": "<Struct 'Vector' (0x91ef2023e48) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+    "translation_offset_local": "<Struct 'Vector' (0x91ef2023e30) {x: 0.000000, y: 0.000000, z: 0.000000}>",
+    "use_ground_falloff": "False"
+  },
+  "fk_settings_class": "<class 'IKRetargetFKChainsOpSettings'>",
+  "fk_settings_props": {
+    "chains_to_retarget": "[{target_chain_name: \"Spine\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"Neck\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"Head\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"LeftLeg\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"LeftFoot\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"LeftClavicle\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"LeftArm\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"LeftThumb\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"LeftIndex\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"LeftMiddle\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"LeftRing\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"LeftPinky\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"RightLeg\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"RightFoot\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"RightClavicle\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"RightArm\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"RightThumb\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"RightIndex\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"RightMiddle\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"RightRing\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}, {target_chain_name: \"RightPinky\", enable_fk: True, rotation_mode: Interpolated, rotation_alpha: 1.000000, translation_mode: None, translation_alpha: 1.000000}]",
+    "enabled": "True",
+    "ik_rig_asset": "<Object '/Game/Target/Mixamo_Character_IKRig.Mixamo_Character_IKRig' (0x91f387e7080) Class 'IKRigDefinition'>",
+    "lod_threshold": "-1"
+  },
+  "ikrig_settings_class": "<class 'IKRetargetRunIKRigOpSettings'>",
+  "ikrig_settings_props": {
+    "chains": "[{target_chain_name: \"LeftLeg\", enable_ik: True, chain_position_alpha: 1.000000, chain_rotation_alpha: 1.000000, override_goal_alpha: False, final_position_alpha: 1.000000, final_rotation_alpha: 1.000000}, {target_chain_name: \"LeftArm\", enable_ik: True, chain_position_alpha: 1.000000, chain_rotation_alpha: 1.000000, override_goal_alpha: False, final_position_alpha: 1.000000, final_rotation_alpha: 1.000000}, {target_chain_name: \"RightLeg\", enable_ik: True, chain_position_alpha: 1.000000, chain_rotation_alpha: 1.000000, override_goal_alpha: False, final_position_alpha: 1.000000, final_rotation_alpha: 1.000000}, {target_chain_name: \"RightArm\", enable_ik: True, chain_position_alpha: 1.000000, chain_rotation_alpha: 1.000000, override_goal_alpha: False, final_position_alpha: 1.000000, final_rotation_alpha: 1.000000}]",
+    "enabled": "True",
+    "ik_rig_asset": "<Object '/Game/Target/Mixamo_Character_IKRig.Mixamo_Character_IKRig' (0x91f387e7080) Class 'IKRigDefinition'>",
+    "lod_threshold": "-1"
+  },
+  "rootmotion_settings_class": "<class 'IKRetargetRootMotionOpSettings'>",
+  "rootmotion_settings_props": {
+    "enabled": "True",
+    "global_offset": "<Struct 'Transform' (0x91ef2074e10) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 0.000000, y: 0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+    "lod_threshold": "-1",
+    "maintain_offset_from_pelvis": "True",
+    "propagate_to_non_retargeted_children": "True",
+    "root_height_source": "<RootMotionHeightSource.COPY_HEIGHT_FROM_SOURCE: 0>",
+    "root_motion_source": "<RootMotionSource.COPY_FROM_SOURCE_ROOT: 0>",
+    "rotate_with_pelvis": "False"
+  },
+  "pelvis_source_bone": "Pelvis",
+  "pelvis_target_bone": "Hips",
+  "rootmotion_source_root_bone": "SMPL_Armature",
+  "rootmotion_target_root_bone": "Hips",
+  "rootmotion_target_pelvis_bone": "Hips"
+}
